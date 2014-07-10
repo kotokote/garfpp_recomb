@@ -1,0 +1,26 @@
+./example_parallel > parallel_300vc_1.dat
+./example_perpendicular > perpendicular_300vc_1.dat
+
+./example_parallel > parallel_300vc_2.dat
+./example_perpendicular > perpendicular_300vc_2.dat
+
+./example_parallel > parallel_300vc_3.dat
+./example_perpendicular > perpendicular_300vc_3.dat
+
+./example_parallel > parallel_300vc_4.dat
+./example_perpendicular > perpendicular_300vc_4.dat
+
+./example_parallel > parallel_300vc_5.dat
+./example_perpendicular > perpendicular_300vc_5.dat
+
+./example_parallel > parallel_300vc_6.dat
+./example_perpendicular > perpendicular_300vc_6.dat
+
+./example_parallel > parallel_300vc_7.dat
+./example_perpendicular > perpendicular_300vc_7.dat
+
+./example_parallel > parallel_300vc_8.dat
+./example_perpendicular > perpendicular_300vc_8.dat
+
+./example_parallel > parallel_300vc_9.dat
+./example_perpendicular > perpendicular_300vc_9.dat

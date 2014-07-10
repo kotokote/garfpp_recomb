@@ -1,0 +1,523 @@
+//This script ilustrates the simulation of the VUV electroluminescence and its properties in pure noble gases (Ne, Ar, Kr and Xe).
+//The program implements a uniform field created by two parallel metalic plates
+
+//Please see, for further details, Phys. Lett. B, vol. 703, pp 217-222, 2011.
+// Author: C. A. B. Oliveira
+// email: carlos.oliveira@ua.pt
+
+// modified by Azriel, then Megan Long meg.k.long@gmail.com
+
+// current version: 15 :: 10bar, 100% xenon, temp 293.15 K, single electron, position starts at 1/10 onsager radius from
+// the parent ion, initial energy spectrum goes as 1/(e^+(7.6eV)^2), recomb cond is Etotal<0 within the deBroglie wavelength
+// if the deBroglie wavelength is less than the Onsager radius - otherwise within the Onsager radius (the case for low energies). 
+// whether null collisions are turned on and what finer_tracking_factor is are printed in output
+// fixed stack swap during recombination to use stack[iE].xi instead of stack[iE].x0
+// added exception for large electric fields due to the cloud: if E_cloud greater than 4.445e8 V/cm, use only electric field 
+// due to parallel plates in calcs (prints message when this happens) 
+// in version 9: added deBroglie wavelength as a recombination option
+// in version 10: added new initial electron energy spectrum 1/(e^+(7.6eV)^2) 
+// in version 11: added 2TMA as a command line choice for adding 2% TMA and changed the ionization cutoff for the kinetic
+// energy to be 7eV if above 8eV, since TMA ionizes between 7 and 8eV and the code doesn't correctly handle ionizations yet.
+// also cut initial energy spectrum off at 7eV.
+// in version 12: when using the deBroglie wavelength recombination condition, the recombination radius is now the Onsager 
+// radius for energies where the deBroglie wavelength is greater than the deBroglie wavelength. Also added condition for 
+// small energies and positive initial potentials where if stack[iE].e0 - potential < 0, stack[iE].energy = 0.0254 (thermal
+// energy) (previously happened for approx 30 out of 20k electrons, leaving status = -16, below transport cut, bc ek<0).
+// in version 13: added 4% CH4 as a possible command line argument
+// in version 14: added possible input for initial positions as text file - program simulates the lesser of the number of                   
+// electrons specified in the command line or the number of lines in the input file.
+// in version 15: added printout for movie of electrons: for 100 frames between tMin and tMax, print all e-s in stack when one hits that mark -
+// edits to AvalancheMicroscopic.cc include keyword 'movie'. also added potential0, potential and electron id (1 through n) to electron struct,
+// so that each electron has its own number associated with it. added this, stack[iE].id, to all printouts. also changed location of
+// sign change for potential and electric field printouts so that they all display the correct sign for electrons - previously only
+// high kinetic energy printout had been correct (for total potential, not dx, dy, dz) ***. potential at beg and end is printed at end status.
+// in version 16: added ion position to movie frame info and final electron information printout, added 'none' as possible text file 
+// input for argv[10] so it disregards input and simulates lines of electron-ion pairs instead, so that can have argv[11], number of 
+// movie frames to print. 100 by default, 0 suppresses output. ** also changed tracking so that it skips the current iE electron
+// until iE = toldestindex; or only the oldest electron is tracked, so that the cohort keeps up with itself. 
+// in version 17: fixed adding electron to stack when created via ionization - code was previously under holes, not electrons.
+// 0 frames is now the default in movies. for n frames, the nth frame is printed as a movie frame, doesn't have to be collected from
+// the final printout. one 'frame' called "final in-simulation printout at max time" is printed at tMax for all electrons (not simultaneously).
+// nCollSkip is currently set to 1 - so the electron being tracked changes every time there's a real collision.
+// also changed printouts so that y -> y-.2 and changed number of ion position line text fields in final printout
+// in version 18: ** found the cause for the high potential warnings and the reason why the final printouts for the electrons
+// differed from the very end-of-simulation kinematics in potential and kinetic energy. the stack size of the mid-trace potential
+// calculations was incorrect - it did not decrease as electrons were removed from the stack for recombination or as they timed out of the
+// simulation. the calculations accessed a vector element still in memory but no longer in the stack, and contributed large potentials
+// when that element was a previous (and therefore close) location of the same electron. these large potentials then increased the kinetic energy.
+// also added sign change for electrons for the potential calculated mid-trace (now signs are correct on all error messages).
+// NOTE: since 'active' ions are removed from calculations as electrons time out of the simulation, the distribution of potential is slightly
+// different for the "Information about electron" printouts. There are fewer negative potentials, since fewer ions are in calculation.
+// See t.Draw("potential:frame","recomb==0") for the .root files with "finalcompare" in the name. A final "simultaneous" printout is maintained
+// at the end of the calculation for comparison.
+// mid v-18: added intial energy and potential to "will recombine" readouts mid-simulation (relative position of text fields not changed)
+// in version 19: added minDistIon to movie frame printouts and final printout. also modified code for ionization case: made ion not exactly at
+// ionizing electron's location, instead half atomic radius away; gave electron initial distance of onsagerFactor*OnsagerRadius away from ion
+// in random direction; used potential from ionizing electron to calculate initial kinetic energy = esec-potential. now no charges should
+// be lying on top of each other. also declared that potential = potential0 so that potential in movie frame 0 is a real number.
+// added command line argument argv[12]=iondistmult to change the distance between ions - arg is a multiple of the alpha density spacing.
+// -- the fix for potential calculation seems to have eliminated the multitiude of high potential/kinetic energy/electric field messages, the
+// incidents where the last electrons in the stack kicked up to 7/8 eV away from an ion/electron, and, more mysteriously, the runs where the 
+// number of elastic collisions reported was much smaller than the average for those conditions (<1000, usually <100 or 0).
+// in version 20: changed default number of movie frames to 1, so that frame 0 prints out beginning info including beginning location and 
+// minDistIon, and frame 1 is equivalent to the 'final simultaneous' printout. also added statement to declare all initial conditions explicitly.
+// in version 21: added mdi0 and mdimax to struct electron; now available in final printout and in movie frame info. mdimax is also in recomb 
+// message.
+
+// ** changed nCollSkip to 1 instead of 100 midst v16
+
+// previously electrons were moving too much when finer_tracking_factor was used. this extra factor was making it so that
+// it was too often the case that nCollTemp>nCollSkip (=100 at top of AvalancheMicroscopic.cc) and code broke out of while
+// loop before updating the new direction vector (kx = newKx, etc) from after the collision. thus the electron had new energy,
+// and position, but not a new direction. current code moved the kx = newKx, etc, line to above this if statement.
+// the code still only checks whether it should advance to the next electron in the cloud after a real collision happens, but
+// this place in the code is the easiest place to make sure that everything written to the stack is from the same snapshot
+// in the electron's timeline. if it were placed near ++nCollTemp, t would be advanced and the collision determined with
+// newEnergy, but position and direction would remain the same.
+
+// can change in command line argument: 
+// 1. electric field (argv[1]) in V/cm - default 100 V/cm
+// 2. number of clouds to simulate (argv[2]) - default 1
+// 3. number of electrons per cloud (argv[3]) - default 1
+// 4. run time in ns (argv[4]) (default 10ns)
+// 5. eleng - fix all electrons at same initial energy (argv[5]) else random if eleng = 0 (this is default)
+//  - if (argc==6) double eleng = argv[5]; ... e0[jj] = eleng; else 
+// 6. pressure in atmostphere - convert to torr (1 atm = 760 torr) and calc dist between electron-ion pairs
+// iondist = 1e-5/atof(argv[6])
+// 7. angle that line of electrons in a cloud will make with positive y axis in x-y plane (z stays constant)
+// entered in degrees, converted to radians: eltheta = atof(argv[7])*Pi/180
+// 8. choice of recombination condition: 0 = original, within an Onsager radius of the ion and Etotal<0
+// 1 = within a de Broglie wavelength of the ion and Etotal<0 (default)
+// 9. choice of gas mixture: default 100% Xe (100Xe), 2TMA98Xe = 2% TMA, 98% Xe, or 4CH496Xe = 4% CH4, 96% Xe
+// 10. text file to input initial electron positions, by row with columns x, y, z in cm - 'none' puts electrons in line (none by default)
+// 11. specify numberofmovieframes in movie - number of movie frames to use; 0 if want this output supressed - 1 by default
+// 12. specify multiple iondistmult by which to change ion spacing from the default alpha density. default is 1, <=0 not accepted. 
+
+// add later: gas mixture. default 100% Xe, else 1CH4 = 1% CH4, 99% Xe; 1CF4 = 1% CF4, 99% Xe, 100Xe = 100% Xe
+
+// use new cloud transport that takes in a series of ionization points (from other programs possibly)
+// and transports the collection with intercorrelations
+
+// for loops that run the program: 1. nef=0;nef<1;nef++ [here set up geometry] 2. ne0=0;ne0<1;ne0++ (in 1)
+// 3. i=0;i<numclouds;i++ (in 2) 4. jj=0;jj<nIonization(=elpercloud, number of e- per cloud);jj++ (in 3) -calculates initial placement
+// 5. ie=0;ie<ep[i].ne;ie++ (in 3) - launches TransportCloud for elpercloud electrons
+
+// nIonization controls placement of initial electrons - shouldn't always be 1 if npr/cloud != 1 ...
+// otherwise each electron in the cloud would begin at same location
+
+// minor updates:
+// added cout.precision(12) to ensure that have precision in y-dimension (and others) no matter initial coordinates
+// commented out counter_steps cout for multiples of 1000000 steps.
+// also added spaces to output to be more awk friendly
+
+#include <iostream>
+#include <fstream>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+#include <TCanvas.h>
+#include <TROOT.h>
+#include <TApplication.h>
+#include <TFile.h>
+#include <TTree.h>
+#include <time.h>
+
+#include "ViewField.hh"
+#include "ViewCell.hh"
+#include "ViewDrift.hh"
+#include "ComponentAnalyticField.hh"
+#include "MediumMagboltz.hh"
+#include "SolidTube.hh"
+#include "SolidBox.hh"
+#include "GeometrySimple.hh"
+#include "Sensor.hh"
+#include "AvalancheMicroscopic.hh"
+#include "Random.hh"
+
+using namespace Garfield;
+using namespace std;
+
+class EPrimary {
+public:
+  Int_t ne;                    // # of electrons
+  Int_t ni;                    // # of ionizations
+  Int_t nExc;                  // # of excitations
+  Int_t nElastic;              // # of elastic collisions 
+  Int_t nTopPlane;             // # of electrons that finished at top plane
+  Int_t nBottomPlane;          // #  of electrons that finished at bottom plane
+  void clear() {               //reset counters
+    ne=0;
+    ni=0;
+    nExc=0;
+    nElastic=0;
+    nTopPlane=0;
+    nBottomPlane=0;
+  }
+  void print() {               //print counters
+    std::cout << "number of electrons: " << ne << " (" << nTopPlane << " of them ended in the top electrode and " << nBottomPlane << " in the bottom electrode)\n";
+    std::cout << "number of ionisations: " << ni << "\n";
+    std::cout << "number of excitations: " << nExc << "\n";
+    std::cout << "number of elastic collisions: " << nElastic << "\n\n";
+  }
+};
+
+int main(int argc, char * argv[]) {
+
+// print version of the code for reference
+cout << endl << "example.C version 21" << endl << endl;
+
+// make precision of cout 12
+cout.precision(12);
+
+//initialize variables for command line arguments in case they're not specified
+double efield = 100;
+int numclouds = 1;
+int elpercloud = 1;
+double runtime = 10;		// default 10 ns
+double eleng = 0; // default of 0 results in random energy between 0 and 7 eV along fcn
+double iondist = 1e-6;		// cm - alpha track spacing of ions is ~1e-5 cm at 1 atm, 1e-6 cm at 10 atm (default)
+double p = 7600;		// pressure [Torr] 10atm
+double eltheta = 0;		// angle in radians that line of e-s will make with positive y axis in x-y plane
+
+// reminder: argv[0] is the program name, and argc >= 1
+
+// convert first arg to electric field
+if (argc > 1 && atof(argv[1]) != 0) efield = atof(argv[1]);
+cout << "Electric Field of " << efield << " V/cm" << "\n";
+
+// convert second arg to total number of clouds simulated per execution (int)
+if (argc > 2 && atoi(argv[2]) > 0) numclouds = atoi(argv[2]);
+
+// convert third arg to total number of electrons to simulate per cloud (int)
+if (argc > 3 && atoi(argv[3]) > 0) elpercloud = atoi(argv[3]);
+cout << "Running " << numclouds << " instance(s) of this simulation, " << elpercloud << " electron-ion pair(s) each." << endl;
+
+// convert fourth arg to runtime in ns
+if (argc > 4 && atof(argv[4]) > 0) runtime = atof(argv[4]);
+cout << "Runtime of " << runtime << " ns." << endl;
+ 
+// if are five or more arguments, the 5th one is the energy of the electrons
+if (argc > 5 && atof(argv[5]) >= 0) eleng = atof(argv[5]);
+cout << "Initial electron energy input is " << eleng << " , where 0 results in an energy between 0 and 7 eV along 1/(E^2+7.6eV^2), and >=0 gives that value as a uniform initial energy in eV." << endl;
+
+// 6th argument is pressure in atm - convert to torr
+// and set iondist for spacing between electrons in cloud
+if (argc > 6 && atof(argv[6]) > 0) {
+  p = atof(argv[6])*760;		// convert from atm to torr
+  iondist = 1e-5/atof(argv[6]);
+//  iondist = 2e-5/atof(argv[6]); // doubling the distance between ions for neon-like tracks
+}
+cout << "Pressure of " << p << " torr = " << p/760 << " atm" << endl;
+
+// 7th argument is angle of line of electrons in cloud to electric field, convert to rad
+if (argc > 7) eltheta = atof(argv[7])*Pi/180;
+if (elpercloud > 1) cout << "Angle of ion column: " << eltheta*180/Pi << " degrees." << endl;
+
+// 8th argument is choice of recombination condition
+bool deBroglieRecomb = 1;
+cout << "Recombination condition of: ";
+if (argc > 8 && atoi(argv[8])==0) {
+  deBroglieRecomb = 0;
+  cout << deBroglieRecomb << " = Using Onsager radius as recombination condition.\n";
+} else cout << deBroglieRecomb << " = Using the smaller of deBroglie wavelength or Onsager radius as recombination condition.\n";
+
+// 9th argument - see later in gas -> SetComposition
+cout << "Gas mix is ";
+if (argc > 9) cout << string(argv[9]) << endl;
+else cout << "Xe" << endl;
+
+// 10th argument - text file for positions, open and see if number of entries matches elpercloud=argv[3]
+// default is to use lines of electron-ion pairs - if both an input file and an angle are specified, 
+// the input file is used and the angle entered is never used
+
+// declares arrays for x0, y0, and z0 now so can be used if reading in the file
+// read in positions for file once, before loop over number of clouds
+// but otherwise computation needs to happen in the loop so that random directions change for each cloud
+
+double x0[elpercloud];
+double y0[elpercloud];
+double z0[elpercloud];
+double e0[elpercloud];
+double t0[elpercloud];
+double dx[elpercloud];
+double dy[elpercloud];
+double dz[elpercloud];
+
+bool use_input_file = false;
+int number_input_lines=0;
+string filename;
+
+if (argc > 10 && string(argv[10])!="none" && string(argv[10])!="NONE" && string(argv[10])!="None") {
+  ifstream input_file(argv[10]);
+  if ( !input_file.is_open() ) {
+    cout<<"Could not open input file, stopping simulation\n";
+    return 0;
+  }
+  else {
+    use_input_file = true;
+    string line;
+
+    // determine number of lines in input file to see how many positions there actually are
+    while (getline(input_file,line)) number_input_lines++;
+    cout << "number lines in input file: " << number_input_lines << endl;
+    // close then reopen so begin at the top again
+    input_file.close();
+    ifstream input_file(argv[10]);
+
+    // whatever the number of positions in the text file than elpercloud specified in command line, simulate the smaller number
+    // ** do we want to simulate less than elpercloud, or just stop the simulation?
+    if (number_input_lines >= elpercloud) number_input_lines = elpercloud;
+    else elpercloud = number_input_lines;    //here choose to keep going with number_input_lines < elpercloud. choice 2 is: else exit? 
+    //read in positions from file
+    for (int i = 0; i < elpercloud; i++) {
+      input_file >> x0[i] >> y0[i] >> z0[i];
+    }
+  }
+}
+cout << "Using input file for ion positions: " << use_input_file;
+if (argc > 10 && use_input_file) cout << " - " << argv[10] << endl;
+else cout << " = no" << endl;
+
+// 11th argument: number of movie frames - pass to AvalancheCloud; default is on and =1 - on if > 0
+int numberofmovieframes = 1;
+if (argc > 11 && atoi(argv[11]) > 0) numberofmovieframes = atoi(argv[11]);
+double movieframetime[numberofmovieframes+1];
+if (argc > 11 && atoi(argv[11]) == 0) numberofmovieframes = 0;
+for (int k = 0; k <= numberofmovieframes; k++) {
+    movieframetime[k]=k*(runtime)/numberofmovieframes;
+  }
+cout << "Movie frames being printed: " << numberofmovieframes << " frame(s)" << endl;
+// if don't want movies, use numberofmovieframes!=0 as a condition for suppressing output in TransportCloud
+
+// 12th argument: multiple of ion spacing to be applied to the default alpha density spacing
+double iondistmult = 1;
+if (argc > 12 && atof(argv[12]) > 0) iondistmult = atof(argv[12]);
+iondist = iondist*iondistmult;
+// print this sentence only if there's more than one electron-ion pair and if no input file is used
+if (elpercloud > 1 && (argc<=10 || !use_input_file))
+cout << "Ions will be placed " << iondist*1e7 << " nm apart in a line at " << eltheta*180/Pi << " degrees from +y, " << iondistmult 
+<< " x the default alpha particle density of " << 1e-5/atof(argv[6])*1e7 << " nm for this pressure." 
+<< " Total length of ion column is " << iondist*(elpercloud-1)*1e4 << " um." << endl;
+
+// check arguments
+//cout << "energy " << eleng << " pressure " << p << " iondist " << iondist << " eltheta " << eltheta << endl << endl;
+
+// loop over fields V/cm
+  
+// double fieldlist[11] = {200.,100.,50.,20.,10.,5.,2.,1.,0.5,0.2,0.1}; 
+double fieldlist[1] = {efield}; 
+// double fieldlist[5] = {2.,1.,0.5,0.2,0.1}; 
+
+//originally looped over number of e fields, now is just one
+for (int nef = 0; nef < 1; nef++) {           //control number of geometries to create with different electric fields
+  // double ef = fieldlist[nef];                //since want same field for each electron cloud, don't loop here
+  double ef = fieldlist[0];
+
+  //simulation parameters
+//  int npe = numclouds;                      //number of primary clouds to simulate
+  //  double ef = 0.5;                            //electric field intensity [Vcm-1]
+  double yGap = 0.54;                            //width of the parallel gap [cm]
+  double v = ef * (yGap + 0.2);                 //voltage applied between the two plates
+                                                //the primary electrons will be released 0.2 cm far way from the bottom electrode and drift toward the top electrode
+
+  //gas parameters
+  //pressure now set above as command line arg, 7600 by default
+  //double p=7600.;                                 //pressure [Torr] 10atm 
+  double temp=293.15;                           //temperature [K];
+  //double temp=0.1;                           //temperature [K];
+
+  // Make a gas medium
+  MediumMagboltz* gas = new MediumMagboltz();
+  // Set the temperature and pressure
+  gas->SetTemperature(temp);
+  gas->SetPressure(p);
+
+  // 9th command line argument: default 100% Xe if 'Xe' or unrecognizable - also 4CH496Xe and 2TMA98Xe
+  if (argc > 9 && string(argv[9])=="2TMA98Xe") gas->SetComposition("Ne", 0.0, "CH4", 0.0, "Xe", 98.0, "CF4", 0.0, "TMA", 2.0);
+  else if (argc > 9 && string(argv[9])=="4CH496Xe") gas->SetComposition("Ne", 0.0, "CH4", 4.0, "Xe", 96.0, "CF4", 0.0, "TMA", 0.0);
+  else if (argc > 9 && string(argv[9])=="Xe") gas->SetComposition("Ne", 0.0, "CH4", 0.0, "Xe", 100.0, "CF4", 0.0, "TMA", 0.0);
+  else gas->SetComposition("Ne", 0.0, "CH4", 0.0, "Xe", 100.0, "CF4", 0.0);
+ 				               //since the implemented decay model is only valid for pure noble gases,
+					       //the first argument of this comand should be one of:
+                                                // 1- "ne"
+                                                // 2- "ar"
+                                                // 3- "kr"
+                                                // 4- "xe"
+						// function can take up to 6 pairs of arguments (6 gases)
+						// will also renormalize all entries to 100%
+ 
+ // Build the geometry
+  GeometrySimple* geo = new GeometrySimple();
+  // Make a box
+  SolidBox* box = new SolidBox(0.0, 0.0, 0.0,1.0, yGap + .2, 1.0);
+  // Add the solid to the geometry, together with the medium inside
+  geo->AddSolid(box, gas);
+
+  // Make a component with analytic electric field
+  ComponentAnalyticField* comp = new ComponentAnalyticField();
+  comp->SetGeometry(geo);
+  comp->AddPlaneY(0.0, 0.0,"b");
+  comp->AddPlaneY(yGap+0.2, v,"t");
+  
+  // Make a sensor
+  Sensor* sensor = new Sensor();
+  sensor->AddComponent(comp);
+
+  //class that stores information about each avalanche 
+  EPrimary ep [numclouds]; 
+
+  //create a Tree file output.root
+  // TFile f("/global/homes/m/mlong/example/output/output.root","RECREATE");
+   
+
+  // Make a microscopic tracking class for electron transport
+  AvalancheMicroscopic* aval = new AvalancheMicroscopic();
+  aval->SetSensor(sensor);
+ 
+  //energy histogram:
+  // TH1D *histen = new TH1D("hen","energy distribution",1000,0.0,100.0);
+  // TH1D *histdiff = new TH1D("hdiff","transverse position distribution (cm)",100,0.0,1.0);
+
+  // aval->EnableElectronEnergyHistogramming(histen);
+
+  // loop over initial electron energies
+  // double e0list[1] = {0.2};
+  // double e0list[5] = {0.00001};
+
+  // originally looped over array of intial energies
+  for (int ne0=0; ne0<1; ne0++){
+
+    // loop over initial energies here if desired
+
+    // originally: calculate a few avalanches - one for every npe
+    // now: instead simulate many clouds per execution, from from 0 to numclouds-1
+    for (int i=0; i<numclouds; i++) {
+
+      //reset variables
+      ep[i].clear();
+
+      int nIonization = elpercloud;         //elpercloud is number of electrons per cloud, fourth execution argument argv[3] or number lines in input file
+  
+      // sets initial electron position if not specified by input file
+      if (!use_input_file) {
+        for (int jj = 0; jj < nIonization; jj++) { 
+          x0[jj] = 0.0 + iondist * sin(eltheta) * jj;      //e-s released at an angle of eltheta away from positive y axis
+          y0[jj] = 0.2 + iondist * cos(eltheta) * jj;
+          // the primary electrons are released 0.2 cm away from the bottom electrode and drift toward the top electrode
+          z0[jj] = 0.0;
+        }
+      }
+  
+      // sets initial time, energy, and direction for all electrons
+      for (int jj = 0; jj < nIonization; jj++) {
+        t0[jj] = 0.0;
+//      e0[jj] = e0list[ne0];
+        if (argc > 5 && eleng != 0) {e0[jj] = eleng;}
+//        else e0[jj] = RndmUniform()*8.0 ; // uniform energy distribution from 0 to 8 eV
+        else e0[jj] = 7.6*tan(RndmUniform()*0.4738522570432410616*Pi/2);        // spectrum of 1/(e^2+(7.6eV)^2)
+                                                                          // for 0 to 9eV for 0 to 0.5535640675343628508
+                                                                          // for 0 to 7eV for 0 to 0.4738522570432410616
+        dx[jj] = 0.;
+        dy[jj] = 0.;
+        dz[jj] = 0.0;
+      }
+  
+      if (!use_input_file) cout << "Avalanche "<< i+1 << " of " << numclouds << " with " << elpercloud << " electrons per cloud oriented in a line at " << eltheta*180/Pi << " degrees from +y :\n";
+      else cout << "Avalanche "<< i+1 << " of " << numclouds << " with " << elpercloud << " electrons per cloud with positions from file " << argv[10] << endl;
+
+      for (int jj = 0; jj < nIonization; jj++) {
+
+        std::cout << "Primary electron " << jj+1 << " of " << nIonization << " started its drift at (x,y-.2,z) = (" << x0[jj] << " , " 
+        << y0[jj]-.2 << " , " << z0[jj] << ") [cm] with an energy of " << e0[jj] << " [eV]\n";
+
+      }
+      //    double e0 = 1.;                                                     // starting energy [eV]
+      // force always same energy Azriel    if (i!=0) {e0 = histen->GetRandom();} // generate energy randomly accordingly to previous collisions
+      // moved following line inside the above for loop to print beginning for all electrons in cloud
+      // std::cout << "the primary electron started its drift at (x,y,z) = ("<< x0[i] << " , " << y0[i] << " , " << z0[i] << ") [cm] with an energy of " << e0[i] << " [eV]\n";
+
+      //    aval->AvalancheElectron(x0, y0, z0, t0, e0, 0., 0., 0.);            // simulate the avalanche 
+      // aval->SetTimeWindow(0.,100.0); // time in ns
+      aval->SetTimeWindow(0.,runtime); // runtime is passed through command line in ns
+      aval->AvalancheCloud(nIonization, x0, y0, z0, t0, e0, dx, dy, dz, deBroglieRecomb, movieframetime, numberofmovieframes);            // simulate a cloud
+      aval->GetAvalancheSize(ep[i].ne,ep[i].ni);                                // # of electrons and of ions 
+
+      // get information about all the electrons produced in the avalanche
+      for (int ie=0;ie<ep[i].ne;ie++){
+        double x0, y0, z0, t0, e0, potential0, mdi0;
+        double x1, y1, z1, t1, e1, potential1, mdi, mdimax;
+        double xion, yion, zion;
+        int status, id;
+        aval->GetElectronEndpoint(ie,x0,y0,z0,t0,e0,x1,y1,z1,t1,e1,status,id,potential0,potential1,xion,yion,zion,mdi0,mdi,mdimax);
+        if (status==-5){                                             // The electron left the drift medium
+          if (y1<0.0001){ep[i].nBottomPlane=ep[i].nBottomPlane+1;}
+	  else if (y1>(yGap-0.0001)) {ep[i].nTopPlane=ep[i].nTopPlane+1;}
+	  std::cout << "Electron " << id << " of " << ep[i].ne << " left the drift medium: (x1,y1,z1)= ( " << x1 << " , " << y1 << " , " << z1 
+          << " ), t1= " << t1 << " , e1= " << e1 << "\n";
+          //histdiff->Fill(sqrt(x1*x1+z1*z1));
+        }
+        else {
+          std::cout << "\nInformation about electron " << id << " of " << ep[i].ne << " from avalanche " << i+1 << " of " << numclouds;
+          std::cout << " which ended with a strange status:\n";
+          std::cout << "(x0,y0-.2,z0)= ( " << x0 << " , " << y0-.2 << " , " << z0 << " ), t0= " << t0 << " , e0= " << e0 << " , potential0= " << potential0 << " , minDistIon0= " << mdi0 << "\n";
+          std::cout << "(x1,y1-.2,z1)= ( " << x1 << " , " << y1-.2 << " , " << z1 << " ), t1= " << t1 << " , e1= " << e1 << " , potential1= " << potential1 << "\n";
+          std::cout << "status = " << status << "\n";
+          std::cout << "(xionf,yionf-.2,zionf)= ( " << xion << " , " << yion-.2 << " , " << zion << " ), minDistIon= " << mdi << " , minDistIonMax= " << mdimax << std::endl << std::endl;
+        }
+      }
+      int nElastic;
+      int nIonising;
+      int nAttachment;
+      int nInelastic;
+      int nExcitation;
+      int nSuperelastic;
+      gas->  GetNumberOfElectronCollisions(nElastic,nIonising,nAttachment,nInelastic,nExcitation,nSuperelastic);
+      ep[i].nExc = nExcitation;
+      ep[i].nElastic = nElastic;
+      gas->ResetCollisionCounters();                                      //the gas accumulates collisions from all avalanches by default
+      ep[i].print();
+    }
+
+/*
+    // Determine the maximum number of vuv photons emitted in an avalanche
+    double nVUVMin=1e8;
+    double nVUVMax=0;
+    for (int i = 0; i<numclouds;i++) {
+      if ((ep[i].nExc+ep[i].ni) < nVUVMin) {nVUVMin = (ep[i].nExc+ep[i].ni);}
+      if ((ep[i].nExc+ep[i].ni) > nVUVMax) {nVUVMax = (ep[i].nExc+ep[i].ni);}
+    }
+
+    //construct and fill distributions of the # of VUV photons
+    TH1D *hVUV = new TH1D("hVUV","nVUV distribution",nVUVMax-nVUVMin,nVUVMin,nVUVMax);
+    hVUV->StatOverflows(kTRUE); 
+
+    for (int i = 0; i<numclouds;i++) {
+      hVUV->Fill(ep[i].nExc+ep[i].ni);
+    }
+
+
+    std::cout << "\n\nAverage number of emitted VUV photons: " << hVUV->GetMean() << "\n"; 
+    std::cout << "Determined value of J: " << (hVUV->GetRMS()*hVUV->GetRMS()) / hVUV->GetMean() << "\n"; 
+
+    histen->Write();
+    hVUV->Write();
+    histdiff->Write();
+
+*/
+
+  }
+
+  delete gas;
+  delete geo;
+  delete box;
+  delete comp;
+  delete sensor;
+  delete aval;
+  //delete histen;
+  //delete hVUV;
+  //delete histdiff;
+  //f.Close();
+}
+}
+

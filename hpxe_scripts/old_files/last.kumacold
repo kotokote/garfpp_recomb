@@ -1,0 +1,21 @@
+*** Begin of history file: Wed Aug  7 12:22:30 2013
+usa nt/cre
+nt/crea 1 par 12 ! ! num x0 y0 z0 t0 e0 xf yf zf tf ef sta
+nt/read 1 results/parallel_300vc_10nm_10atm_5pch4_0to8_ev.dat.list
+nt/pl 1.e0
+nt/pl 1.ef
+nt/pl 1.tf
+nt/pl 1.tf sta=-17
+nt/pl 1.yf-y0 sta=-17
+nt/pl 1.(yf-y0)*1000./((tf-t0)/1000.) sta=-17
+nt/pl 1.(yf-y0)*10./((tf-t0)/1000.) sta=-17
+nt/pl 1.xf-x0 sta=-17
+nt/pl 1.zf-z0 sta=-17
+nt/pl 1.(zf-z0)*1e4 sta=-17
+nt/pl 1.(yf-y0)*1e4 sta=-17
+nt/pl 1.e0 sta=-8
+nt/crea 2 per 12 ! ! num x0 y0 z0 t0 e0 xf yf zf tf ef sta
+nt/read 2 results/perpendicular_300vc_10nm_10atm_5pch4_0to8_ev.dat.list
+nt/pl 2.e0 sta=-8
+exit
+*** End   of history file: Wed Aug  7 13:17:58 2013

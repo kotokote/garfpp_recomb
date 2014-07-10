@@ -1,0 +1,18 @@
+*** Begin of history file: Thu Aug  8 10:03:32 2013
+nt/rea 1 per 12 ! ! num x0 y0 z0 t0 e0 xf yf zf tf ef sta
+nt/crea 1 per 12 ! ! num x0 y0 z0 t0 e0 xf yf zf tf ef sta
+nt/read 1 results/perpendicular_300vc_1000nm_10atm_0pch4_0to8_ev.dat.list
+nt/pl 1.e0
+nt/pl 1.sta
+nt/pl 1.yf-y0
+nt/pl 1.(yf-y0)*10/((tf-t0)/1000.)
+nt/pl 1.tf
+nt/pl 1.(yf-y0)*10/((tf-t0)/1000.) sta=-17
+opt sta
+nt/pl 1.(yf-y0)*10/((tf-t0)/1000.) sta=-17
+nt/pl 1.(xf-x0)*10.*sqrt(1e6/10.) sta=-17
+nt/pl 1.(xf-x0)*10.*sqrt(1e5/10.) sta=-17
+nt/pl 1.(xf-x0)*10.*sqrt(1e4/10.) sta=-17
+nt/pl 1.(xf-x0)*10.*sqrt(1e5/10.) sta=-17
+nt/pl 1.(xf-x0)*10.*sqrt(1e6/10.) sta=-17
+*** End   of history file: Thu Aug  8 15:44:00 2013

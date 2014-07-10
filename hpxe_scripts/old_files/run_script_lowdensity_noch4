@@ -1,0 +1,5 @@
+./perpendicular_300vc_1000nm_10atm_0pch4 > perpendicular_300vc_1000nm_10atm_0pch4_1.dat &
+./parallel_300vc_1000nm_10atm_0pch4 > parallel_300vc_1000nm_10atm_0pch4_1.dat &
+
+./perpendicular_300vc_1000nm_10atm_0pch4 > perpendicular_300vc_1000nm_10atm_0pch4_2.dat &
+./parallel_300vc_1000nm_10atm_0pch4 > parallel_300vc_1000nm_10atm_0pch4_2.dat &

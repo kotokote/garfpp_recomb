@@ -1,0 +1,12 @@
+RandomEngineRoot:
+    Generator type: TRandom3
+    Seed: 1375761847
+Electric Field of 300 volt per cm
+MediumMagboltz::SetComposition:
+    Xe
+SolidBox:
+    -1 < x [cm] < 1
+    -0.74 < y [cm] < 0.74
+    -1 < z [cm] < 1
+Avalanche 1 of 1:
+the primary electron started its drift at (x,y,z,) = ( 0x7fff8da0a5d0 , 0x7fff8da0a2a0 , 0x7fff8da09f70) [cm] with an energy of 0x7fff8da09c40 [eV]

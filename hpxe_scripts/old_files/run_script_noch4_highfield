@@ -1,0 +1,9 @@
+./perpendicular_3000vc_10nm_10atm_0pch4 > perpendicular_3000vc_10nm_10atm_0pch4_1.dat &
+./parallel_3000vc_10nm_10atm_0pch4 > parallel_3000vc_10nm_10atm_0pch4_1.dat &
+
+./perpendicular_3000vc_10nm_10atm_0pch4 > perpendicular_3000vc_10nm_10atm_0pch4_2.dat &
+./parallel_3000vc_10nm_10atm_0pch4 > parallel_3000vc_10nm_10atm_0pch4_2.dat &
+
+./perpendicular_3000vc_10nm_10atm_0pch4 > perpendicular_3000vc_10nm_10atm_0pch4_3.dat &
+./parallel_3000vc_10nm_10atm_0pch4 > parallel_3000vc_10nm_10atm_0pch4_3.dat &
+

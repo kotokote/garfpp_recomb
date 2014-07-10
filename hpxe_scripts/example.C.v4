@@ -1,0 +1,315 @@
+//This script ilustrates the simulation of the VUV electroluminescence and its properties in pure noble ≈gases (Ne, Ar, Kr and Xe).
+//The program implements a uniform field created by two parallel metalic plates
+
+//Please see, for further details, Phys. Lett. B, vol. 703, pp 217-222, 2011.
+// Author: C. A. B. Oliveira
+// email: carlos.oliveira@ua.pt
+
+// modified by Azriel, then Megan Long meg.k.long@gmail.com
+// current version: 4 :: 10bar, 100% xenon, temp 293.15 K, single electron, position starts at 1/10 onsager radius from
+// the parent ion, initial energy is random 0 to 8ev, recomb cond is Et<0 within a Onsager radius. null collisions turned on
+// and finer_tracking_factor = 10
+// can change in command line argument: electric field (argv[1]), number of clouds to simulate (argv[2]),
+// number of electrons per cloud (argv[3]), and run time in ns (argv[4]), optional 5th is eleng to fix all 
+// electrons at same initial energy (argv[5] - if (argc==6) double eleng = argv[5]; ... e0[jj] = eleng; else ...
+// also added spaces to output to be more awk friendly
+//
+// use new cloud transport that takes in a series of ionization points (from other programs possibly)
+// and transports the collection with intercorrelations
+
+// for loops that run the program: 1. nef=0;nef<1;nef++ [here set up geometry] 2. ne0=0;ne0<1;ne0++ (in 1)
+// 3. i=0;i<npe(=numclouds);i++ (in 2) 4. jj=0;jj<nIonization(=elpercloud, number of e- per cloud);jj++ (in 3) -calculates initial placement
+// 5. ie=0;ie<ep[i].ne;ie++ (in 3) - launches TransportCloud for elpercloud electrons
+
+// nIonization controls placement of initial electrons - shouldn't always be 1 if npr/cloud != 1 ...
+// otherwise each electron in the cloud would begin at same location
+
+// added cout.precision(12) to ensure that have precision in y-dimension (and others) no matter initial coordinates
+// commented out counter_steps cout for multiples of 1000000 steps.
+
+#include <iostream>
+#include <fstream>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+#include <TCanvas.h>
+#include <TROOT.h>
+#include <TApplication.h>
+#include <TFile.h>
+#include <TTree.h>
+#include <time.h>
+
+#include "ViewField.hh"
+#include "ViewCell.hh"
+#include "ViewDrift.hh"
+#include "ComponentAnalyticField.hh"
+#include "MediumMagboltz.hh"
+#include "SolidTube.hh"
+#include "SolidBox.hh"
+#include "GeometrySimple.hh"
+#include "Sensor.hh"
+#include "AvalancheMicroscopic.hh"
+#include "Random.hh"
+
+using namespace Garfield;
+using namespace std;
+
+class EPrimary {
+public:
+  Int_t ne;                    // # of electrons
+  Int_t ni;                    // # of ionizations
+  Int_t nExc;                  // # of excitations
+  Int_t nElastic;              // # of elastic collisions 
+  Int_t nTopPlane;             // # of electrons that finished at top plane
+  Int_t nBottomPlane;          // #  of electrons that finished at bottom plane
+  void clear() {               //reset counters
+    ne=0;
+    ni=0;
+    nExc=0;
+    nElastic=0;
+    nTopPlane=0;
+    nBottomPlane=0;
+  }
+  void print() {               //print counters
+    std::cout << "number of electrons: " << ne << " (" << nTopPlane << " of them ended in the top electrode and " << nBottomPlane << " in the bottom electrode)\n";
+    std::cout << "number of ionisations: " << ni << "\n";
+    std::cout << "number of excitations: " << nExc << "\n";
+    std::cout << "number of elastic collisions: " << nElastic << "\n\n";
+  }
+};
+
+int main(int argc, char * argv[]) {
+
+// make precision of cout 12
+cout.precision(12);
+
+//initialize variables for command line arguments in case they're not specified
+double efield = 100;
+int numclouds = 1;
+int elpercloud = 1;
+double runtime = 1;
+double eleng = RndmUniform()*8.0;
+
+// reminder: argv[0] is the program name, and argc >= 1
+
+// convert first arg to electric field
+if (argc > 1) efield = atof(argv[1]);
+
+// convert second arg to total number of clouds simulated per execution (int)
+if (argc > 2) numclouds = atoi(argv[2]);
+
+// convert third arg to total number of electrons to simulate per cloud (int)
+if (argc > 3) elpercloud = atoi(argv[3]);
+
+// convert fourth arg to runtime in ns
+if (argc > 4) runtime = atof(argv[4]);
+ 
+// if are five or more arguments, the 5th one is the energy of the electrons
+if (argc > 5) eleng = atof(argv[5]);
+
+// loop over fields V/cm
+  
+// double fieldlist[11] = {200.,100.,50.,20.,10.,5.,2.,1.,0.5,0.2,0.1}; 
+double fieldlist[1] = {efield}; 
+// double fieldlist[5] = {2.,1.,0.5,0.2,0.1}; 
+
+//originally looped over number of e fields, now is just one
+for (int nef = 0; nef < 1; nef++) {           //control number of geometries to create with different electric fields
+  // double ef = fieldlist[nef];                //since want same field for each electron cloud, don't loop here
+  double ef = fieldlist[0];
+
+  std::cout << "Electric Field of " << ef << " volts per cm" << "\n";
+  //simulation parameters
+  int npe = numclouds;                      //number of primary clouds to simulate
+  //  double ef = 0.5;                            //electric field intensity [Vcm-1]
+  double yGap = 0.54;                            //width of the parallel gap [cm]
+  double v = ef * (yGap + 0.2);                 //voltage applied between the two plates
+                                                //the primary electrons will be released 0.2 cm far way from the bottom electrode and drift toward the top electrode
+
+  //gas parameters
+  double p=7600.;                                 //pressure [Torr] 10atm 
+  double temp=293.15;                           //temperature [K];
+  //double temp=0.1;                           //temperature [K];
+
+  // Make a gas medium
+  MediumMagboltz* gas = new MediumMagboltz();
+  // Set the temperature and pressure
+  gas->SetTemperature(temp);
+  gas->SetPressure(p);
+  gas->SetComposition("Ne", 0.0, "CH4", 0.0, "Xe", 100.0, "CF4", 0.0);              //since the implemented decay model is only valid for pure noble gases,
+					       //the first argument of this comand should be one of:
+                                                // 1- "ne"
+                                                // 2- "ar"
+                                                // 3- "kr"
+                                                // 4- "xe"
+						// function can take up to 6 pairs of arguments (6 gases)
+						// will also renormalize all entries to 100%
+ 
+ // Build the geometry
+  GeometrySimple* geo = new GeometrySimple();
+  // Make a box
+  SolidBox* box = new SolidBox(0.0, 0.0, 0.0,1.0, yGap + .2, 1.0);
+  // Add the solid to the geometry, together with the medium inside
+  geo->AddSolid(box, gas);
+
+  // Make a component with analytic electric field
+  ComponentAnalyticField* comp = new ComponentAnalyticField();
+  comp->SetGeometry(geo);
+  comp->AddPlaneY(0.0, 0.0,"b");
+  comp->AddPlaneY(yGap+0.2, v,"t");
+  
+  // Make a sensor
+  Sensor* sensor = new Sensor();
+  sensor->AddComponent(comp);
+
+  //class that stores information about each avalanche 
+  EPrimary ep [npe]; 
+
+  //create a Tree file output.root
+  // TFile f("/global/homes/m/mlong/example/output/output.root","RECREATE");
+   
+
+ 
+
+  // Make a microscopic tracking class for electron transport
+  AvalancheMicroscopic* aval = new AvalancheMicroscopic();
+  aval->SetSensor(sensor);
+ 
+  //energy histogram:
+  // TH1D *histen = new TH1D("hen","energy distribution",1000,0.0,100.0);
+  // TH1D *histdiff = new TH1D("hdiff","transverse position distribution (cm)",100,0.0,1.0);
+
+  // aval->EnableElectronEnergyHistogramming(histen);
+
+  // loop over initial electron energies
+  // double e0list[1] = {0.2};
+  // double e0list[5] = {0.00001};
+
+  // originally looped over array of intial energies
+  for (int ne0=0; ne0<1; ne0++){
+
+
+    // loop over initial energies here if desired
+
+    // originally: calculate a few avalanches - one for every npe
+    // now: instead simulate many clouds per execution, npe = number of total clouds
+    for (int i=0; i<npe; i++) {
+
+      //reset variables
+      ep[i].clear();
+
+      //intial conditions
+      int nIonization = elpercloud;         //elpercloud is number of electrons per cloud, third execution argument
+      double x0[nIonization];
+      double y0[nIonization];
+      double z0[nIonization];
+      double e0[nIonization];
+      double t0[nIonization];
+      double dx[nIonization];
+      double dy[nIonization];
+      double dz[nIonization];
+
+      std::cout << "Avalanche "<< i+1 << " of " << npe << ":\n";
+
+      for (int jj = 0; jj < nIonization; jj++) {
+        x0[jj] = 0.0 ;
+        y0[jj] = 0.2 + 10e-7 * jj;
+        // the primary electrons are released 0.2 cm far way from the bottom electrode and drift toward the top electrode
+        z0[jj] = 0.0;
+        t0[jj] = 0.0;                          
+        //      e0[jj] = e0list[ne0];
+        if (argc > 5) {e0[jj] = eleng;}
+        else e0[jj] = RndmUniform()*8.0 ; // uniform energy distribution
+        dx[jj] = 0.;
+        dy[jj] = 0.;
+        dz[jj] = 0.0;
+        std::cout << "Primary electron " << jj+1 << " of " << nIonization << " started its drift at (x,y,z) = (" << x0[jj] << " , " 
+        << y0[jj] << " , " << z0[jj] << ") [cm] with an energy of " << e0[jj] << " [eV]\n";
+      }
+      //    double e0 = 1.;                                                     // starting energy [eV]
+      // force always same energy Azriel    if (i!=0) {e0 = histen->GetRandom();} // generate energy randomly accordingly to previous collisions
+      // moved following line inside the above for loop to print beginning for all electrons in cloud
+      // std::cout << "the primary electron started its drift at (x,y,z) = ("<< x0[i] << " , " << y0[i] << " , " << z0[i] << ") [cm] with an energy of " << e0[i] << " [eV]\n";
+
+      //    aval->AvalancheElectron(x0, y0, z0, t0, e0, 0., 0., 0.);            // simulate the avalanche 
+      // aval->SetTimeWindow(0.,100.0); // time in ns
+      aval->SetTimeWindow(0.,runtime); // runtime is passed through command line in ns
+      aval->AvalancheCloud(nIonization, x0, y0, z0, t0, e0, dx, dy, dz);            // simulate a cloud
+      aval->GetAvalancheSize(ep[i].ne,ep[i].ni);                                // # of electrons and of ions 
+
+      // get information about all the electrons produced in the avalanche
+      for (int ie=0;ie<ep[i].ne;ie++){
+        double x0, y0, z0, t0, e0;
+        double x1, y1, z1, t1, e1;
+        int status;
+        aval->GetElectronEndpoint(ie,x0,y0,z0,t0,e0,x1,y1,z1,t1,e1,status);
+        if (status==-5){                                             // The electron left the drift medium
+          if (y1<0.0001){ep[i].nBottomPlane=ep[i].nBottomPlane+1;}
+	  else if (y1>(yGap-0.0001)) {ep[i].nTopPlane=ep[i].nTopPlane+1;}
+	  std::cout << "Electron " << ie+1 << " of " << ep[i].ne << " left the drift medium: (x1,y1,z1)= ( " << x1 << " , " << y1 << " , " << z1 
+          << " ), t1= " << t1 << " , e1= " << e1 << "\n";
+          //histdiff->Fill(sqrt(x1*x1+z1*z1));
+        }
+        else {
+          std::cout << "\nInformation about electron " << ie+1 << " of " << ep[i].ne << " from avalanche " << i+1 << " of " << numclouds;
+          std::cout << " which ended with a strange status:\n";
+          std::cout << "(x0,y0,z0)= ( " << x0 << " , " << y0 << " , " << z0 << " ), t0= " << t0 << " , e0= " << e0 << "\n";
+          std::cout << "(x1,y1,z1)= ( " << x1 << " , " << y1 << " , " << z1 << " ), t1= " << t1 << " , e1= " << e1 << "\n";
+          std::cout << "status = " << status << "\n\n";
+        }
+      }
+      int nElastic;
+      int nIonising;
+      int nAttachment;
+      int nInelastic;
+      int nExcitation;
+      int nSuperelastic;
+      gas->  GetNumberOfElectronCollisions(nElastic,nIonising,nAttachment,nInelastic,nExcitation,nSuperelastic);
+      ep[i].nExc = nExcitation;
+      ep[i].nElastic = nElastic;
+      gas->ResetCollisionCounters();                                      //the gas accumulates collisions from all avalanches by default
+      ep[i].print();
+    }
+
+/*
+    // Determine the maximum number of vuv photons emitted in an avalanche
+    double nVUVMin=1e8;
+    double nVUVMax=0;
+    for (int i = 0; i<npe;i++) {
+      if ((ep[i].nExc+ep[i].ni) < nVUVMin) {nVUVMin = (ep[i].nExc+ep[i].ni);}
+      if ((ep[i].nExc+ep[i].ni) > nVUVMax) {nVUVMax = (ep[i].nExc+ep[i].ni);}
+    }
+
+    //construct and fill distributions of the # of VUV photons
+    TH1D *hVUV = new TH1D("hVUV","nVUV distribution",nVUVMax-nVUVMin,nVUVMin,nVUVMax);
+    hVUV->StatOverflows(kTRUE); 
+
+    for (int i = 0; i<npe;i++) {
+      hVUV->Fill(ep[i].nExc+ep[i].ni);
+    }
+
+
+    std::cout << "\n\nAverage number of emitted VUV photons: " << hVUV->GetMean() << "\n"; 
+    std::cout << "Determined value of J: " << (hVUV->GetRMS()*hVUV->GetRMS()) / hVUV->GetMean() << "\n"; 
+
+    histen->Write();
+    hVUV->Write();
+    histdiff->Write();
+
+*/
+
+  }
+  delete gas;
+  delete geo;
+  delete box;
+  delete comp;
+  delete sensor;
+  delete aval;
+  //delete histen;
+  //delete hVUV;
+  //delete histdiff;
+  //f.Close();
+}
+}
+

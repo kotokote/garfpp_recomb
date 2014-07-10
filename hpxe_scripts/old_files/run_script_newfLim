@@ -1,0 +1,14 @@
+./perpendicular_0vc_10nm_10atm_0pch4_0to8_ev > results/perpendicular_0vc_10nm_10atm_0pch4_0to8_ev_1.dat &
+./parallel_0vc_10nm_10atm_0pch4_0to8_ev > results/parallel_0vc_10nm_10atm_0pch4_0to8_ev_1.dat &
+
+./perpendicular_0vc_10nm_10atm_0pch4_0to8_ev > results/perpendicular_0vc_10nm_10atm_0pch4_0to8_ev_2.dat &
+./parallel_0vc_10nm_10atm_0pch4_0to8_ev > results/parallel_0vc_10nm_10atm_0pch4_0to8_ev_2.dat &
+
+./perpendicular_0vc_10nm_10atm_0pch4_0to8_ev > results/perpendicular_0vc_10nm_10atm_0pch4_0to8_ev_3.dat &
+./parallel_0vc_10nm_10atm_0pch4_0to8_ev > results/parallel_0vc_10nm_10atm_0pch4_0to8_ev_3.dat &
+
+./perpendicular_0vc_10nm_10atm_0pch4_0to8_ev > results/perpendicular_0vc_10nm_10atm_0pch4_0to8_ev_4.dat &
+./parallel_0vc_10nm_10atm_0pch4_0to8_ev > results/parallel_0vc_10nm_10atm_0pch4_0to8_ev_4.dat &
+
+./perpendicular_0vc_10nm_10atm_0pch4_0to8_ev > results/perpendicular_0vc_10nm_10atm_0pch4_0to8_ev_5.dat &
+./parallel_0vc_10nm_10atm_0pch4_0to8_ev > results/parallel_0vc_10nm_10atm_0pch4_0to8_ev_5.dat &

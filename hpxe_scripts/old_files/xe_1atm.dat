@@ -1,0 +1,2013 @@
+RandomEngineRoot:
+    Generator type: TRandom3
+    Seed: 1370300777
+Electric Field of 200 volt per cm
+MediumMagboltz::SetComposition:
+    Xe
+SolidBox:
+    -1 < x [cm] < 1
+    -0.74 < y [cm] < 0.74
+    -1 < z [cm] < 1
+Avalanche 1 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+Sensor::SetArea:
+    -1 < x [cm] < 1
+    -0.74 < y [cm] < 0.74
+    -1 < z [cm] < 1
+(x1,y1,z1)= (0.18621,0.74,-0.240321), t1= 4172.21, e1= 2.78524
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 6035659
+
+Avalanche 2 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+(x1,y1,z1)= (0.0564385,0.74,0.081017), t1= 4082.32, e1= 2.29118
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 5984857
+
+Avalanche 3 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+(x1,y1,z1)= (0.00766451,0.74,-0.0521651), t1= 4172.32, e1= 2.73434
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 5789748
+
+Avalanche 4 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+(x1,y1,z1)= (-0.0312544,0.74,-0.314169), t1= 3959.38, e1= 2.43583
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 6015387
+
+Avalanche 5 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+(x1,y1,z1)= (0.0144965,0.74,-0.0565585), t1= 4042.57, e1= 3.00751
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 6076440
+
+Avalanche 6 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+(x1,y1,z1)= (-0.231416,0.74,-0.220107), t1= 4271.66, e1= 2.71686
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 6162437
+
+Avalanche 7 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+(x1,y1,z1)= (-0.0806711,0.74,-0.299769), t1= 4921.58, e1= 2.52402
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 6322940
+
+Avalanche 8 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+(x1,y1,z1)= (-0.0783607,0.74,0.259769), t1= 4029.8, e1= 2.33965
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 5772532
+
+Avalanche 9 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+(x1,y1,z1)= (0.117494,0.74,-0.0826625), t1= 4006.38, e1= 2.52207
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 6043612
+
+Avalanche 10 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+(x1,y1,z1)= (-0.0284469,0.74,-0.0743733), t1= 4173.44, e1= 2.51893
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 6098084
+
+
+
+Average number of emitted VUV photons: 0
+Determined value of J: nan
+Avalanche 1 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (-0.00394061,0.74,0.0311289), t1= 3569.38, e1= 2.9911
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 5785682
+
+Avalanche 2 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (0.0509767,0.74,-0.101074), t1= 4366.27, e1= 2.09049
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 6010130
+
+Avalanche 3 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (0.171774,0.74,0.132633), t1= 4544.21, e1= 2.79835
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 6086791
+
+Avalanche 4 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (0.106125,0.74,0.0438042), t1= 4230.31, e1= 3.21549
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 5971897
+
+Avalanche 5 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (-0.132891,0.74,-0.183936), t1= 4079.01, e1= 2.67038
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 5980452
+
+Avalanche 6 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (0.0512687,0.74,-0.137267), t1= 4473.71, e1= 2.82902
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 6271726
+
+Avalanche 7 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (0.0497101,0.74,-0.0390755), t1= 4287.45, e1= 2.8005
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 6150819
+
+Avalanche 8 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (0.110314,0.74,-0.0719477), t1= 4459.83, e1= 2.63907
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 6126770
+
+Avalanche 9 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (-0.145506,0.74,-0.302484), t1= 4016.7, e1= 2.82967
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 5839367
+
+Avalanche 10 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (0.145962,0.74,0.0198378), t1= 4268.23, e1= 2.87164
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 6081804
+
+
+
+Average number of emitted VUV photons: 0
+Determined value of J: nan
+Avalanche 1 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (-0.0310422,0.74,-0.269694), t1= 4091, e1= 2.6228
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 6171847
+
+Avalanche 2 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (0.113206,0.74,0.252439), t1= 4548.82, e1= 2.53182
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 6169558
+
+Avalanche 3 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (0.0149911,0.74,-0.0383109), t1= 4558.32, e1= 2.35079
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 6304448
+
+Avalanche 4 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (-0.0407026,0.74,0.0585287), t1= 4508.4, e1= 2.78293
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 6121503
+
+Avalanche 5 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (-0.207889,0.74,0.222457), t1= 4074.01, e1= 2.75673
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 5983422
+
+Avalanche 6 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (0.208378,0.74,0.0945565), t1= 4783.93, e1= 2.9504
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 6374678
+
+Avalanche 7 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (0.105045,0.74,-0.129764), t1= 4266.29, e1= 3.05908
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 6182276
+
+Avalanche 8 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (-0.19071,0.74,-0.0218709), t1= 4327.96, e1= 3.02088
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 6158335
+
+Avalanche 9 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (-0.166187,0.74,0.169094), t1= 4175.5, e1= 2.2586
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 6139849
+
+Avalanche 10 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (0.232442,0.74,0.144843), t1= 5073.82, e1= 2.16653
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 6590714
+
+
+
+Average number of emitted VUV photons: 0
+Determined value of J: nan
+Avalanche 1 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 5 [eV]
+(x1,y1,z1)= (-0.220304,0.74,0.144691), t1= 4435.88, e1= 2.69396
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 6379779
+
+Avalanche 2 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 5 [eV]
+(x1,y1,z1)= (0.0587618,0.74,-0.0583682), t1= 4613, e1= 2.71991
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 6167415
+
+Avalanche 3 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 5 [eV]
+(x1,y1,z1)= (0.0470628,0.74,-0.022019), t1= 4365.95, e1= 3.27633
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 6249584
+
+Avalanche 4 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 5 [eV]
+(x1,y1,z1)= (-0.07647,0.74,0.202738), t1= 4606.59, e1= 2.60041
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 6288879
+
+Avalanche 5 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 5 [eV]
+(x1,y1,z1)= (-0.0951033,0.74,-0.226649), t1= 4411.71, e1= 2.89769
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 6232532
+
+Avalanche 6 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 5 [eV]
+(x1,y1,z1)= (0.04399,0.74,0.139855), t1= 4514.55, e1= 2.7993
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 6302646
+
+Avalanche 7 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 5 [eV]
+(x1,y1,z1)= (0.0631135,0.74,0.066618), t1= 4166.3, e1= 2.65153
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 6240522
+
+Avalanche 8 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 5 [eV]
+(x1,y1,z1)= (-0.116035,0.74,0.0126263), t1= 4107.7, e1= 2.4711
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 5998830
+
+Avalanche 9 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 5 [eV]
+(x1,y1,z1)= (0.0306073,0.74,0.202257), t1= 5017.9, e1= 2.05689
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 6556790
+
+Avalanche 10 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 5 [eV]
+(x1,y1,z1)= (0.034639,0.74,-0.0823338), t1= 4147.41, e1= 1.83666
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 6169103
+
+
+
+Average number of emitted VUV photons: 0
+Determined value of J: nan
+Avalanche 1 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 10 [eV]
+(x1,y1,z1)= (0.00675252,0.74,-0.197868), t1= 4759.88, e1= 2.28782
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 1
+number of elastic collisions: 6584243
+
+Avalanche 2 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 10 [eV]
+(x1,y1,z1)= (-0.282151,0.74,-0.0288891), t1= 4694.71, e1= 3.01787
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 1
+number of elastic collisions: 6504780
+
+Avalanche 3 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 10 [eV]
+(x1,y1,z1)= (-0.178004,0.74,-0.00993783), t1= 4217.51, e1= 2.52831
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 1
+number of elastic collisions: 6049377
+
+Avalanche 4 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 10 [eV]
+(x1,y1,z1)= (-0.0302424,0.74,0.133216), t1= 3932.34, e1= 2.9841
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 1
+number of elastic collisions: 5903333
+
+Avalanche 5 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 10 [eV]
+(x1,y1,z1)= (0.226875,0.74,0.186552), t1= 3996.8, e1= 2.84051
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 1
+number of elastic collisions: 5882169
+
+Avalanche 6 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 10 [eV]
+(x1,y1,z1)= (-0.0108727,0.74,0.00984608), t1= 4021.41, e1= 2.26347
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 1
+number of elastic collisions: 5839728
+
+Avalanche 7 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 10 [eV]
+(x1,y1,z1)= (0.15707,0.74,-0.0260251), t1= 4297.84, e1= 3.10653
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 1
+number of elastic collisions: 6182475
+
+Avalanche 8 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 10 [eV]
+(x1,y1,z1)= (-0.0591719,0.74,-0.0512481), t1= 4050.38, e1= 3.38241
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 1
+number of elastic collisions: 6185076
+
+Avalanche 9 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 10 [eV]
+(x1,y1,z1)= (0.183874,0.74,0.040621), t1= 3517.47, e1= 2.52461
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 1
+number of elastic collisions: 5894549
+
+Avalanche 10 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 10 [eV]
+(x1,y1,z1)= (-0.119444,0.74,0.120064), t1= 4365.9, e1= 2.43246
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 1
+number of elastic collisions: 6249334
+
+
+
+Average number of emitted VUV photons: 1
+Determined value of J: 0
+Electric Field of 100 volt per cm
+MediumMagboltz::SetComposition:
+    Xe
+SolidBox:
+    -1 < x [cm] < 1
+    -0.74 < y [cm] < 0.74
+    -1 < z [cm] < 1
+Avalanche 1 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+Sensor::SetArea:
+    -1 < x [cm] < 1
+    -0.74 < y [cm] < 0.74
+    -1 < z [cm] < 1
+(x1,y1,z1)= (0.242423,0.74,-0.269441), t1= 4112.14, e1= 2.44253
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 3676304
+
+Avalanche 2 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+(x1,y1,z1)= (0.0772929,0.74,0.090699), t1= 5027, e1= 2.27314
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 4220396
+
+Avalanche 3 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+(x1,y1,z1)= (-0.0330043,0.74,0.0289537), t1= 5320.12, e1= 2.08496
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 4481650
+
+Avalanche 4 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+(x1,y1,z1)= (0.180812,0.74,-0.155657), t1= 4133.29, e1= 2.47495
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 3783782
+
+Avalanche 5 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+(x1,y1,z1)= (-0.0380226,0.74,-0.118571), t1= 3770.88, e1= 2.06999
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 3610186
+
+Avalanche 6 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+(x1,y1,z1)= (-0.0080611,0.74,0.0440176), t1= 4662.59, e1= 2.21188
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 3982796
+
+Avalanche 7 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+(x1,y1,z1)= (-0.164798,0.74,-0.0702952), t1= 4605.81, e1= 2.57179
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 4189196
+
+Avalanche 8 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+(x1,y1,z1)= (0.0182743,0.74,-0.0624337), t1= 4681.7, e1= 2.23201
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 4172298
+
+Avalanche 9 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+(x1,y1,z1)= (-0.141013,0.74,0.0713583), t1= 5351.6, e1= 2.24241
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 4355589
+
+Avalanche 10 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+(x1,y1,z1)= (0.00930529,0.74,-0.293101), t1= 4330.47, e1= 2.00726
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 3802998
+
+
+
+Average number of emitted VUV photons: 0
+Determined value of J: nan
+Avalanche 1 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (0.168404,0.74,-0.132266), t1= 5444.96, e1= 2.35902
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 4249133
+
+Avalanche 2 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (-0.135258,0.74,-0.196808), t1= 4646.42, e1= 1.85026
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 4061847
+
+Avalanche 3 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (-0.129125,0.74,0.063117), t1= 4490.47, e1= 1.95268
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 3963669
+
+Avalanche 4 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (-0.237681,0.74,-0.345457), t1= 4437.06, e1= 2.34339
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 3889624
+
+Avalanche 5 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (-0.0745379,0.74,0.0424509), t1= 4173.87, e1= 2.14149
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 3960522
+
+Avalanche 6 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (0.127303,0.74,-0.176665), t1= 4812.63, e1= 2.1019
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 4037968
+
+Avalanche 7 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (-0.0418162,0.74,0.042491), t1= 4701.67, e1= 2.42438
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 3916879
+
+Avalanche 8 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (0.0178637,0.74,0.0443037), t1= 5150.62, e1= 2.25233
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 4203275
+
+Avalanche 9 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (-0.0980833,0.74,0.194941), t1= 4769, e1= 2.03847
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 4126558
+
+Avalanche 10 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (0.070028,0.74,-0.0304033), t1= 5080.46, e1= 2.01758
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 4167437
+
+
+
+Average number of emitted VUV photons: 0
+Determined value of J: nan
+Avalanche 1 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (-0.0838883,0.74,0.123587), t1= 4152.28, e1= 2.25089
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 3825485
+
+Avalanche 2 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (-0.0881305,0.74,-0.190931), t1= 4803.39, e1= 1.81759
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 4322596
+
+Avalanche 3 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (-0.166321,0.74,0.0400855), t1= 4303.32, e1= 2.20351
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 4100390
+
+Avalanche 4 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (0.0677142,0.74,0.116649), t1= 4638.68, e1= 2.67164
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 3921831
+
+Avalanche 5 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (0.00678093,0.74,0.208179), t1= 5265.4, e1= 1.71941
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 4348330
+
+Avalanche 6 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (0.0552457,0.74,0.189829), t1= 4893.43, e1= 1.89157
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 4183027
+
+Avalanche 7 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (-0.183833,0.74,0.281147), t1= 4693.16, e1= 1.96631
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 4054554
+
+Avalanche 8 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (-0.171559,0.74,-0.060313), t1= 4425.52, e1= 2.22203
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 3828795
+
+Avalanche 9 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (0.268276,0.74,-0.0529605), t1= 4211.71, e1= 1.83196
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 3910392
+
+Avalanche 10 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (-0.158924,0.74,-0.148739), t1= 4382.42, e1= 2.58746
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 4032724
+
+
+
+Average number of emitted VUV photons: 0
+Determined value of J: nan
+Avalanche 1 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 5 [eV]
+(x1,y1,z1)= (0.266797,0.74,-0.00616033), t1= 5621.38, e1= 1.69314
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 4487141
+
+Avalanche 2 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 5 [eV]
+(x1,y1,z1)= (-0.0244051,0.74,-0.317199), t1= 4786.98, e1= 2.23833
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 4242403
+
+Avalanche 3 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 5 [eV]
+(x1,y1,z1)= (0.0762879,0.74,0.14726), t1= 5404.5, e1= 2.49048
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 4549855
+
+Avalanche 4 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 5 [eV]
+(x1,y1,z1)= (0.0581087,0.74,0.127205), t1= 4287.97, e1= 2.35541
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 4022146
+
+Avalanche 5 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 5 [eV]
+(x1,y1,z1)= (0.0575854,0.74,-0.0833062), t1= 4915.92, e1= 2.18723
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 4445155
+
+Avalanche 6 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 5 [eV]
+(x1,y1,z1)= (0.0498894,0.74,0.18244), t1= 4470.26, e1= 1.74208
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 4170819
+
+Avalanche 7 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 5 [eV]
+(x1,y1,z1)= (0.113097,0.74,0.267769), t1= 5293.92, e1= 1.97819
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 4461520
+
+Avalanche 8 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 5 [eV]
+(x1,y1,z1)= (0.0103715,0.74,-0.101611), t1= 4976.06, e1= 1.87579
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 4247880
+
+Avalanche 9 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 5 [eV]
+(x1,y1,z1)= (0.107436,0.74,0.237519), t1= 3803.61, e1= 2.10961
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 3776848
+
+Avalanche 10 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 5 [eV]
+(x1,y1,z1)= (0.0247549,0.74,0.11099), t1= 4714.17, e1= 2.496
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 4402308
+
+
+
+Average number of emitted VUV photons: 0
+Determined value of J: nan
+Avalanche 1 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 10 [eV]
+(x1,y1,z1)= (-0.183919,0.74,0.0118701), t1= 4799.55, e1= 1.87903
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 1
+number of elastic collisions: 4136102
+
+Avalanche 2 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 10 [eV]
+(x1,y1,z1)= (-0.166243,0.74,0.134598), t1= 5071.61, e1= 1.95646
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 1
+number of elastic collisions: 4178525
+
+Avalanche 3 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 10 [eV]
+(x1,y1,z1)= (-0.0799477,0.74,-0.0692589), t1= 5263.95, e1= 1.89162
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 1
+number of elastic collisions: 4405940
+
+Avalanche 4 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 10 [eV]
+(x1,y1,z1)= (-0.139554,0.74,0.0114214), t1= 5231.4, e1= 2.13308
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 1
+number of elastic collisions: 4337509
+
+Avalanche 5 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 10 [eV]
+(x1,y1,z1)= (-0.0964319,0.74,0.0282034), t1= 5016.92, e1= 1.87584
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 1
+number of elastic collisions: 4332522
+
+Avalanche 6 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 10 [eV]
+(x1,y1,z1)= (-0.0226654,0.74,-0.0260766), t1= 5592.04, e1= 2.3342
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 1
+number of elastic collisions: 4547446
+
+Avalanche 7 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 10 [eV]
+(x1,y1,z1)= (-0.137259,0.74,0.219028), t1= 4669.4, e1= 2.45356
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 1
+number of elastic collisions: 3985988
+
+Avalanche 8 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 10 [eV]
+(x1,y1,z1)= (0.0497316,0.74,-0.134743), t1= 5932.71, e1= 2.08485
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 1
+number of elastic collisions: 4789151
+
+Avalanche 9 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 10 [eV]
+(x1,y1,z1)= (0.0996561,0.74,0.198283), t1= 5151.45, e1= 2.2796
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 1
+number of elastic collisions: 4369839
+
+Avalanche 10 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 10 [eV]
+(x1,y1,z1)= (-0.0297181,0.74,0.0827973), t1= 5996.79, e1= 2.31379
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 1
+number of elastic collisions: 4595167
+
+
+
+Average number of emitted VUV photons: 1
+Determined value of J: 0
+Electric Field of 50 volt per cm
+MediumMagboltz::SetComposition:
+    Xe
+SolidBox:
+    -1 < x [cm] < 1
+    -0.74 < y [cm] < 0.74
+    -1 < z [cm] < 1
+Avalanche 1 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+Sensor::SetArea:
+    -1 < x [cm] < 1
+    -0.74 < y [cm] < 0.74
+    -1 < z [cm] < 1
+(x1,y1,z1)= (-0.0794385,0.74,-0.13071), t1= 5035.7, e1= 1.68952
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 3170894
+
+Avalanche 2 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+(x1,y1,z1)= (-0.180324,0.74,-0.0522917), t1= 6187.3, e1= 1.69916
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 3785369
+
+Avalanche 3 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+(x1,y1,z1)= (0.0235854,0.74,0.114661), t1= 5125.72, e1= 1.99685
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 3496644
+
+Avalanche 4 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+(x1,y1,z1)= (0.00973207,0.74,0.0480835), t1= 3987.1, e1= 1.20299
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 2414810
+
+Avalanche 5 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+(x1,y1,z1)= (0.0297328,0.74,-0.268523), t1= 5127.93, e1= 1.67794
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 3542550
+
+Avalanche 6 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+(x1,y1,z1)= (0.222983,0.74,-0.18056), t1= 5992.17, e1= 1.35132
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 3763198
+
+Avalanche 7 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+(x1,y1,z1)= (0.223296,0.74,0.0802308), t1= 4752.83, e1= 1.67751
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 2850176
+
+Avalanche 8 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+(x1,y1,z1)= (0.0383242,0.74,-0.133578), t1= 5944.29, e1= 1.73295
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 3366207
+
+Avalanche 9 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+(x1,y1,z1)= (0.16456,0.74,-0.0241699), t1= 5669.65, e1= 1.47761
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 3599063
+
+Avalanche 10 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+(x1,y1,z1)= (-0.18839,0.74,-0.153671), t1= 4202.54, e1= 1.96825
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 2921301
+
+
+
+Average number of emitted VUV photons: 0
+Determined value of J: nan
+Avalanche 1 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (0.0747471,0.74,-0.00551816), t1= 3946.76, e1= 1.51865
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 2422197
+
+Avalanche 2 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (0.0900592,0.74,0.215255), t1= 6703.89, e1= 1.9987
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 4041963
+
+Avalanche 3 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (-0.0540845,0.74,0.113714), t1= 5312.79, e1= 1.6078
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 3148541
+
+Avalanche 4 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (-0.164943,0.74,0.14095), t1= 4328.54, e1= 1.76772
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 2995005
+
+Avalanche 5 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (-0.0582789,0.74,0.228213), t1= 4098.62, e1= 1.86035
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 3102419
+
+Avalanche 6 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (0.338059,0.74,-0.0200354), t1= 4808.89, e1= 1.64915
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 2876406
+
+Avalanche 7 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (0.071947,0.74,0.17168), t1= 5409.86, e1= 1.28967
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 2818768
+
+Avalanche 8 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (0.0860805,0.74,-0.0767832), t1= 4047.83, e1= 1.4762
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 2669324
+
+Avalanche 9 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (0.00275618,0.74,-0.111166), t1= 5809.33, e1= 1.44415
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 3336944
+
+Avalanche 10 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (0.196459,0.74,-0.30205), t1= 3796.71, e1= 1.78788
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 2355937
+
+
+
+Average number of emitted VUV photons: 0
+Determined value of J: nan
+Avalanche 1 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (0.175424,0.74,0.217829), t1= 4222.86, e1= 1.93798
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 2506218
+
+Avalanche 2 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (0.177341,0.74,-0.120136), t1= 5589.75, e1= 1.74
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 3038809
+
+Avalanche 3 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (0.172915,0.74,0.0540327), t1= 3854.62, e1= 1.64725
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 2444975
+
+Avalanche 4 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (-0.11617,0.74,-0.200016), t1= 5091.41, e1= 1.87238
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 2879036
+
+Avalanche 5 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (0.0229862,0.74,0.284102), t1= 5263.03, e1= 1.94658
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 2882412
+
+Avalanche 6 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (0.0561342,0.74,-0.314643), t1= 6380.51, e1= 1.58926
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 3717770
+
+Avalanche 7 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (-0.0939096,0.74,0.0743546), t1= 5286.91, e1= 1.66868
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 3156674
+
+Avalanche 8 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (0.303712,0.74,0.224984), t1= 4999.05, e1= 1.5184
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 3010748
+
+Avalanche 9 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (0.00256114,0.74,-0.00297248), t1= 3718.38, e1= 1.72192
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 2710588
+
+Avalanche 10 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (0.0615045,0.74,0.170546), t1= 4087.01, e1= 1.85742
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 2628876
+
+
+
+Average number of emitted VUV photons: 0
+Determined value of J: nan
+Avalanche 1 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 5 [eV]
+(x1,y1,z1)= (-0.0513164,0.74,0.228157), t1= 5093.24, e1= 1.75452
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 3474770
+
+Avalanche 2 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 5 [eV]
+(x1,y1,z1)= (0.158732,0.74,-0.0203931), t1= 6875.1, e1= 1.75032
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 4206606
+
+Avalanche 3 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 5 [eV]
+(x1,y1,z1)= (0.0326916,0.74,-0.0957283), t1= 5888.89, e1= 1.85249
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 3404952
+
+Avalanche 4 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 5 [eV]
+(x1,y1,z1)= (0.107476,0.74,-0.0248622), t1= 4429.01, e1= 1.67689
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 2821269
+
+Avalanche 5 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 5 [eV]
+(x1,y1,z1)= (0.077077,0.74,0.132525), t1= 5634.12, e1= 1.56258
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 3771746
+
+Avalanche 6 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 5 [eV]
+(x1,y1,z1)= (-0.0107971,0.74,0.337359), t1= 5301.13, e1= 1.74499
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 2934504
+
+Avalanche 7 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 5 [eV]
+(x1,y1,z1)= (-0.0107738,0.74,-0.0547593), t1= 5607.43, e1= 1.40232
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 3458557
+
+Avalanche 8 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 5 [eV]
+(x1,y1,z1)= (0.0497369,0.74,-0.192632), t1= 5513.48, e1= 1.78492
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 3506159
+
+Avalanche 9 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 5 [eV]
+(x1,y1,z1)= (-0.0712269,0.74,0.00785182), t1= 6493.46, e1= 1.57171
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 3743704
+
+Avalanche 10 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 5 [eV]
+(x1,y1,z1)= (-0.227894,0.74,-0.0640083), t1= 5744.38, e1= 1.70756
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 3424004
+
+
+
+Average number of emitted VUV photons: 0
+Determined value of J: nan
+Avalanche 1 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 10 [eV]
+(x1,y1,z1)= (0.162338,0.74,-0.0271591), t1= 5432.13, e1= 1.57788
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 1
+number of elastic collisions: 2842482
+
+Avalanche 2 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 10 [eV]
+(x1,y1,z1)= (-0.13697,0.74,-0.0718369), t1= 5228.84, e1= 1.39925
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 1
+number of elastic collisions: 2726095
+
+Avalanche 3 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 10 [eV]
+(x1,y1,z1)= (-0.117178,0.74,0.0131949), t1= 4679.62, e1= 1.81784
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 1
+number of elastic collisions: 2820973
+
+Avalanche 4 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 10 [eV]
+(x1,y1,z1)= (0.216643,0.74,-0.256771), t1= 4831.77, e1= 2.01959
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 1
+number of elastic collisions: 2964331
+
+Avalanche 5 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 10 [eV]
+(x1,y1,z1)= (0.248305,0.74,0.237467), t1= 5669.44, e1= 1.62223
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 1
+number of elastic collisions: 3309232
+
+Avalanche 6 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 10 [eV]
+(x1,y1,z1)= (-0.444446,0.74,0.168842), t1= 5906.02, e1= 2.25139
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 1
+number of elastic collisions: 3156752
+
+Avalanche 7 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 10 [eV]
+(x1,y1,z1)= (-0.268242,0.74,-0.339395), t1= 4232.54, e1= 1.77563
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 1
+number of elastic collisions: 2572040
+
+Avalanche 8 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 10 [eV]
+(x1,y1,z1)= (0.0127155,0.74,-0.221976), t1= 4556.94, e1= 1.68724
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 1
+number of elastic collisions: 2794711
+
+Avalanche 9 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 10 [eV]
+(x1,y1,z1)= (0.0395236,0.74,-0.197045), t1= 4884.16, e1= 2.15683
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 1
+number of elastic collisions: 2770263
+
+Avalanche 10 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 10 [eV]
+(x1,y1,z1)= (0.139259,0.74,-0.312385), t1= 4905.66, e1= 1.50702
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 1
+number of elastic collisions: 2832281
+
+
+
+Average number of emitted VUV photons: 1
+Determined value of J: 0
+Electric Field of 20 volt per cm
+MediumMagboltz::SetComposition:
+    Xe
+SolidBox:
+    -1 < x [cm] < 1
+    -0.74 < y [cm] < 0.74
+    -1 < z [cm] < 1
+Avalanche 1 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+Sensor::SetArea:
+    -1 < x [cm] < 1
+    -0.74 < y [cm] < 0.74
+    -1 < z [cm] < 1
+(x1,y1,z1)= (0.12519,0.74,-0.076133), t1= 10467, e1= 1.05435
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 10429542
+
+Avalanche 2 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+(x1,y1,z1)= (0.0747507,0.74,-0.0196543), t1= 8844.43, e1= 1.26479
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 9075294
+
+Avalanche 3 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+(x1,y1,z1)= (-0.0757445,0.74,0.153969), t1= 12318.6, e1= 1.47129
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 13787228
+
+Avalanche 4 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+(x1,y1,z1)= (-0.0558589,0.74,-0.12105), t1= 11540.6, e1= 1.00226
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 11856784
+
+Avalanche 5 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+(x1,y1,z1)= (0.0834276,0.74,0.240436), t1= 10879.6, e1= 1.22409
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 11280892
+
+Avalanche 6 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+(x1,y1,z1)= (-0.0749785,0.74,0.0070727), t1= 18141.5, e1= 1.02058
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 23508569
+
+Avalanche 7 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+(x1,y1,z1)= (0.0692822,0.74,-0.298107), t1= 14099.6, e1= 0.472227
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 16475439
+
+Avalanche 8 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+(x1,y1,z1)= (0.23545,0.74,0.0949247), t1= 11412.5, e1= 0.9814
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 12341022
+
+Avalanche 9 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+(x1,y1,z1)= (-0.0609182,0.74,0.0203195), t1= 11602.9, e1= 0.969805
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 12412699
+
+Avalanche 10 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+(x1,y1,z1)= (-0.106721,0.74,-0.0625235), t1= 6199.64, e1= 1.45357
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 5012774
+
+
+
+Average number of emitted VUV photons: 0
+Determined value of J: nan
+Avalanche 1 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (-0.306204,0.74,0.00965369), t1= 15567.2, e1= 0.137052
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 17928912
+
+Avalanche 2 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (-0.00287663,0.74,-0.163012), t1= 9024.64, e1= 1.55764
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 8337958
+
+Avalanche 3 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (-0.216707,0.74,-0.196585), t1= 9337.17, e1= 1.18204
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 7133635
+
+Avalanche 4 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (-0.0251368,0.74,-0.222837), t1= 6368.32, e1= 1.42705
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 4770023
+
+Avalanche 5 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (0.123299,0.74,0.103523), t1= 6137.5, e1= 0.654401
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 4497371
+
+Avalanche 6 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (0.00949056,0.74,0.171718), t1= 8236.31, e1= 1.13068
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 8269169
+
+Avalanche 7 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (0.193402,0.74,-0.144227), t1= 6329.52, e1= 1.38512
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 5222729
+
+Avalanche 8 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (-0.0418343,0.74,-0.0056117), t1= 14630.8, e1= 0.444315
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 16760448
+
+Avalanche 9 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (-0.0228997,0.74,-0.0824139), t1= 5407.3, e1= 1.0313
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 3788357
+
+Avalanche 10 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (-0.100609,0.74,0.103484), t1= 6239.5, e1= 0.119524
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 4608867
+
+
+
+Average number of emitted VUV photons: 0
+Determined value of J: nan
+Avalanche 1 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (-0.193609,0.74,-0.217658), t1= 7109.75, e1= 1.25789
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 4766190
+
+Avalanche 2 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (0.123898,0.74,0.222665), t1= 16435.3, e1= 0.406342
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 18644258
+
+Avalanche 3 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (0.123838,0.74,-0.112313), t1= 8535.24, e1= 0.990347
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 7319257
+
+Avalanche 4 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (0.0168312,0.74,0.288625), t1= 9213.39, e1= 0.163713
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 7793122
+
+Avalanche 5 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (-0.0140916,0.74,0.0452117), t1= 9499.38, e1= 1.32544
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 9434743
+
+Avalanche 6 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (0.169413,0.74,-0.153678), t1= 10787.2, e1= 0.411676
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 11535815
+
+Avalanche 7 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (0.0364036,0.74,-0.0350787), t1= 9055.11, e1= 1.36454
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 9037780
+
+Avalanche 8 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (-0.11735,0.74,-0.092382), t1= 6922.01, e1= 1.31926
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 4425690
+
+Avalanche 9 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (-0.159576,0.74,-0.038131), t1= 10363.9, e1= 1.1045
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 10099327
+
+Avalanche 10 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (-0.0561898,0.74,-0.0179096), t1= 6621.45, e1= 1.29848
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 4055518
+
+
+
+Average number of emitted VUV photons: 0
+Determined value of J: nan
+Avalanche 1 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 5 [eV]
+(x1,y1,z1)= (0.254263,0.74,0.35703), t1= 9862.44, e1= 1.43412
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 8967550
+
+Avalanche 2 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 5 [eV]
+(x1,y1,z1)= (0.270283,0.74,0.0896963), t1= 6357.85, e1= 1.36141
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 4008745
+
+Avalanche 3 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 5 [eV]
+(x1,y1,z1)= (-0.169049,0.74,-0.119998), t1= 4229.19, e1= 1.42939
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 1883383
+
+Avalanche 4 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 5 [eV]
+(x1,y1,z1)= (-0.207363,0.74,-0.142582), t1= 7093.29, e1= 1.25933
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 6230218
+
+Avalanche 5 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 5 [eV]
+(x1,y1,z1)= (-0.038814,0.74,-0.331188), t1= 11236.8, e1= 1.18902
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 9544829
+
+Avalanche 6 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 5 [eV]
+(x1,y1,z1)= (0.149336,0.74,0.317676), t1= 4122.29, e1= 1.24059
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 1490842
+
+Avalanche 7 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 5 [eV]
+(x1,y1,z1)= (0.10533,0.74,0.028408), t1= 10563, e1= 0.996118
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 10422216
+
+Avalanche 8 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 5 [eV]
+(x1,y1,z1)= (0.00459853,0.74,-0.215246), t1= 8292.57, e1= 1.30737
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 6425348
+
+Avalanche 9 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 5 [eV]
+(x1,y1,z1)= (0.442092,0.74,-0.0285981), t1= 6800.59, e1= 1.0068
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 4270137
+
+Avalanche 10 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 5 [eV]
+(x1,y1,z1)= (0.0194597,0.74,-0.192871), t1= 7153.58, e1= 1.51041
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 6451580
+
+
+
+Average number of emitted VUV photons: 0
+Determined value of J: nan
+Avalanche 1 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 10 [eV]
+(x1,y1,z1)= (-0.0485711,0.74,0.0655274), t1= 5852.05, e1= 0.752799
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 1
+number of elastic collisions: 2706002
+
+Avalanche 2 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 10 [eV]
+(x1,y1,z1)= (0.0293757,0.74,-0.302108), t1= 9697.75, e1= 1.02662
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 1
+number of elastic collisions: 7771271
+
+Avalanche 3 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 10 [eV]
+(x1,y1,z1)= (0.15802,0.74,-0.0465502), t1= 10456.4, e1= 1.22054
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 1
+number of elastic collisions: 10364464
+
+Avalanche 4 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 10 [eV]
+(x1,y1,z1)= (0.0309526,0.74,0.0168245), t1= 13948.4, e1= 1.14619
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 1
+number of elastic collisions: 16074556
+
+Avalanche 5 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 10 [eV]
+(x1,y1,z1)= (0.0619992,0.74,-0.125827), t1= 8665.89, e1= 0.0607083
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 1
+number of elastic collisions: 7416951
+
+Avalanche 6 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 10 [eV]
+(x1,y1,z1)= (0.0945276,0.74,-0.0824185), t1= 10372.6, e1= 0.981457
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 1
+number of elastic collisions: 10711735
+
+Avalanche 7 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 10 [eV]
+(x1,y1,z1)= (0.149366,0.74,0.321988), t1= 11073.4, e1= 0.974121
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 1
+number of elastic collisions: 12252988
+
+Avalanche 8 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 10 [eV]
+(x1,y1,z1)= (0.415256,0.74,-0.034027), t1= 6083.42, e1= 1.43672
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 1
+number of elastic collisions: 3495246
+
+Avalanche 9 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 10 [eV]
+(x1,y1,z1)= (-0.0604419,0.74,0.0210838), t1= 9698.02, e1= 0.46358
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 1
+number of elastic collisions: 8071346
+
+Avalanche 10 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 10 [eV]
+(x1,y1,z1)= (-0.0443312,0.74,0.136324), t1= 8957.98, e1= 1.08831
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 1
+number of elastic collisions: 9065573
+
+
+
+Average number of emitted VUV photons: 1
+Determined value of J: 0
+Electric Field of 10 volt per cm
+MediumMagboltz::SetComposition:
+    Xe
+SolidBox:
+    -1 < x [cm] < 1
+    -0.74 < y [cm] < 0.74
+    -1 < z [cm] < 1
+Avalanche 1 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+Sensor::SetArea:
+    -1 < x [cm] < 1
+    -0.74 < y [cm] < 0.74
+    -1 < z [cm] < 1
+(x1,y1,z1)= (0.0214041,0.74,0.22313), t1= 33835.7, e1= 0.0872851
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 45345730
+
+Avalanche 2 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+(x1,y1,z1)= (0.0558992,0.74,-0.0120385), t1= 30032.4, e1= 0.0719686
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 40245875
+
+Avalanche 3 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+(x1,y1,z1)= (-0.165343,0.74,-0.131391), t1= 31531.7, e1= 0.48904
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 42460431
+
+Avalanche 4 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+(x1,y1,z1)= (-0.0294172,0.74,-0.00716569), t1= 39900.9, e1= 0.245018
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 55478076
+
+Avalanche 5 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+(x1,y1,z1)= (-0.0243696,0.74,-0.0324176), t1= 42309.7, e1= 0.25183
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 58103356
+
+Avalanche 6 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+(x1,y1,z1)= (0.116468,0.74,0.0173941), t1= 51786.4, e1= 0.289179
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 71995423
+
+Avalanche 7 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+(x1,y1,z1)= (-0.0142769,0.74,0.0386326), t1= 26270.9, e1= 0.848797
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 35766075
+
+Avalanche 8 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+(x1,y1,z1)= (-0.00811303,0.74,-0.0511335), t1= 22757.7, e1= 1.05569
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 30289777
+
+Avalanche 9 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+(x1,y1,z1)= (-0.0614193,0.74,-0.0490208), t1= 47789, e1= 0.466394
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 66520717
+
+Avalanche 10 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.1 [eV]
+(x1,y1,z1)= (0.0734272,0.74,0.0522896), t1= 42387.4, e1= 0.10059
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 58497847
+
+
+
+Average number of emitted VUV photons: 0
+Determined value of J: nan
+Avalanche 1 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (0.00613019,0.74,-0.0363619), t1= 35100.7, e1= 0.0480717
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 47557111
+
+Avalanche 2 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (-0.0707912,0.74,0.0906441), t1= 19152.8, e1= 0.0421233
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 23714141
+
+Avalanche 3 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (0.0337885,0.74,0.0356169), t1= 37673.4, e1= 0.1824
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 51760674
+
+Avalanche 4 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (-0.0150637,0.74,0.00538167), t1= 35060.2, e1= 0.0797749
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 48483802
+
+Avalanche 5 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (-0.00989876,0.74,-0.0138618), t1= 28598.3, e1= 0.344217
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 38691059
+
+Avalanche 6 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (-0.0384139,0.74,0.0136126), t1= 10679.2, e1= 0.142741
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 11246401
+
+Avalanche 7 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (-0.0496243,0.74,-0.053206), t1= 33712.1, e1= 0.117193
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 46013437
+
+Avalanche 8 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (-0.048388,0.74,-0.0562629), t1= 26274.7, e1= 0.0256621
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 34934128
+
+Avalanche 9 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (0.017668,0.74,-0.0102352), t1= 44886.2, e1= 0.186734
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 61456038
+
+Avalanche 10 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 0.5 [eV]
+(x1,y1,z1)= (-0.0212341,0.74,-0.0194762), t1= 37331.5, e1= 0.125892
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 50569831
+
+
+
+Average number of emitted VUV photons: 0
+Determined value of J: nan
+Avalanche 1 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (-0.0120003,0.74,-0.00845484), t1= 31769.3, e1= 0.0512069
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 43129937
+
+Avalanche 2 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (-0.104655,0.74,-0.081738), t1= 37820.8, e1= 0.241107
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 51246389
+
+Avalanche 3 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (-0.0295892,0.74,0.0743151), t1= 45751.4, e1= 0.109711
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 62891647
+
+Avalanche 4 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (-0.145357,0.74,-0.0335793), t1= 22494.9, e1= 0.141397
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 29387197
+
+Avalanche 5 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (0.0412198,0.74,-0.0877943), t1= 41200.7, e1= 0.18201
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 56810504
+
+Avalanche 6 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (0.0495103,0.74,0.0216897), t1= 45140.3, e1= 0.156113
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 62051324
+
+Avalanche 7 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (0.0961999,0.74,0.0407186), t1= 35064.4, e1= 0.520182
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 48016897
+
+Avalanche 8 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (0.0169677,0.74,-0.0227723), t1= 45703.5, e1= 0.0529176
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 62774695
+
+Avalanche 9 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (-0.0356041,0.74,-0.0207642), t1= 38577.5, e1= 0.387397
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 52678278
+
+Avalanche 10 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 1 [eV]
+(x1,y1,z1)= (0.126917,0.74,-0.18616), t1= 24853.7, e1= 0.0431342
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 32214404
+
+
+
+Average number of emitted VUV photons: 0
+Determined value of J: nan
+Avalanche 1 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 5 [eV]
+(x1,y1,z1)= (-0.0639094,0.74,-0.0127622), t1= 44827.5, e1= 0.205445
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 61424392
+
+Avalanche 2 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 5 [eV]
+(x1,y1,z1)= (0.00246308,0.74,0.13674), t1= 32279.4, e1= 0.135314
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 42999866
+
+Avalanche 3 of 10:
+the primary electron started its drift at (x,y,z,) = ( 0 , 0.2 , 0) [cm] with an energy of 5 [eV]
+(x1,y1,z1)= (-0.106481,0.74,-0.112196), t1= 40976.8, e1= 0.252182
+number of electrons: 1 (1 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 551416

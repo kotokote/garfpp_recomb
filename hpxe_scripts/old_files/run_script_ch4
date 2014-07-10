@@ -1,0 +1,15 @@
+./perpendicular_300vc_10nm_10atm_1pch4 > perpendicular_300vc_10nm_10atm_1pch4_1.dat &
+./parallel_300vc_10nm_10atm_1pch4 > parallel_300vc_10nm_10atm_1pch4_1.dat &
+
+./perpendicular_300vc_10nm_10atm_1pch4 > perpendicular_300vc_10nm_10atm_1pch4_2.dat &
+./parallel_300vc_10nm_10atm_1pch4 > parallel_300vc_10nm_10atm_1pch4_2.dat &
+
+./perpendicular_300vc_10nm_10atm_1pch4 > perpendicular_300vc_10nm_10atm_1pch4_3.dat &
+./parallel_300vc_10nm_10atm_1pch4 > parallel_300vc_10nm_10atm_1pch4_3.dat &
+
+./perpendicular_300vc_10nm_10atm_1pch4 > perpendicular_300vc_10nm_10atm_1pch4_4.dat &
+./parallel_300vc_10nm_10atm_1pch4 > parallel_300vc_10nm_10atm_1pch4_4.dat &
+
+./perpendicular_300vc_10nm_10atm_1pch4 > perpendicular_300vc_10nm_10atm_1pch4_5.dat &
+./parallel_300vc_10nm_10atm_1pch4 > parallel_300vc_10nm_10atm_1pch4_5.dat &
+

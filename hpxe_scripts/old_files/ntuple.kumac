@@ -1,0 +1,2 @@
+nt/crea 1 par 12 ! ! num x0 y0 z0 t0 e0 xf yf zf tf ef sta
+nt/read 1 results/parallel_300vc_10nm_10atm_5pch4_0to8_ev.dat.list

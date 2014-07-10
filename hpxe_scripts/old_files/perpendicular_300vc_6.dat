@@ -1,0 +1,995 @@
+RandomEngineRoot:
+    Generator type: TRandom3
+    Seed: 1375561742
+Electric Field of 300 volt per cm
+MediumMagboltz::SetComposition:
+    Xe
+SolidBox:
+    -1 < x [cm] < 1
+    -0.74 < y [cm] < 0.74
+    -1 < z [cm] < 1
+Avalanche 1 of 1:
+the primary electron started its drift at (x,y,z,) = ( 0x7fffa1222ac0 , 0x7fffa1222790 , 0x7fffa1222460) [cm] with an energy of 0x7fffa1222130 [eV]
+Sensor::SetArea:
+    -1 < x [cm] < 1
+    -0.74 < y [cm] < 0.74
+    -1 < z [cm] < 1
+Electron will recombine, Ek= 0.469619 and potential= -1.32943at R= 1.51199e-07
+Time to recombine = 0
+Origin x,y,z 8.9e-05 0.2 0
+Final x,y,z 8.33979e-05 0.2 5.27035e-07
+Electron will recombine, Ek= 1.0699 and potential= -1.12751at R= 2.02277e-07
+Time to recombine = 0
+Origin x,y,z 4.3e-05 0.2 0
+Final x,y,z 4.85793e-05 0.200001 -3.09711e-07
+Electron will recombine, Ek= 0.947205 and potential= -1.52822at R= 1.30173e-07
+Time to recombine = 0
+Origin x,y,z 4e-05 0.2 0
+Final x,y,z 4.55399e-05 0.200001 4.90543e-07
+Electron will recombine, Ek= 0.698633 and potential= -0.721907at R= 9.90952e-07
+Time to recombine = 0.000328562
+Origin x,y,z 9.4e-05 0.2 0
+Final x,y,z 9.85251e-05 0.200001 -3.47777e-07
+Electron will recombine, Ek= 0.268441 and potential= -0.910771at R= 2.73688e-07
+Time to recombine = 0.0018334
+Origin x,y,z 6.6e-05 0.2 0
+Final x,y,z 6.14446e-05 0.2 9.3417e-07
+Electron will recombine, Ek= 0.779123 and potential= -0.919062at R= 2.75234e-07
+Time to recombine = 0.00172953
+Origin x,y,z 4e-06 0.2 0
+Final x,y,z -2.14598e-07 0.2 1.94851e-06
+Electron will recombine, Ek= 0.804531 and potential= -0.83819at R= 1.22641e-06
+Time to recombine = 0.00248825
+Origin x,y,z 9.7e-05 0.2 0
+Final x,y,z 9.82824e-05 0.2 2.15811e-06
+Electron will recombine, Ek= 0.201168 and potential= -0.209525at R= 2.5913e-06
+Time to recombine = 0.00336155
+Origin x,y,z 2.4e-05 0.2 0
+Final x,y,z 3.01037e-05 0.199997 2.63727e-07
+Electron will recombine, Ek= 0.242178 and potential= -0.243379at R= 3.4444e-06
+Time to recombine = 0.0036102
+Origin x,y,z 9.1e-05 0.2 0
+Final x,y,z 9.39277e-05 0.200003 1.74444e-06
+Electron will recombine, Ek= 0.792808 and potential= -0.825393at R= 3.08895e-07
+Time to recombine = 0.00514639
+Origin x,y,z 7.2e-05 0.2 0
+Final x,y,z 6.94623e-05 0.200001 1.89545e-06
+Electron will recombine, Ek= 0.587288 and potential= -0.735382at R= 2.14581e-07
+Time to recombine = 0.00433495
+Origin x,y,z 9e-05 0.2 0
+Final x,y,z 8.58353e-05 0.200001 -1.40105e-06
+Electron will recombine, Ek= 1.17652 and potential= -1.66344at R= 1.12605e-07
+Time to recombine = 0.00603449
+Origin x,y,z 4.1e-05 0.2 0
+Final x,y,z 3.4867e-05 0.2 1.258e-06
+Electron will recombine, Ek= 0.693936 and potential= -0.817345at R= 2.47758e-07
+Time to recombine = 0.00516858
+Origin x,y,z 3e-06 0.2 0
+Final x,y,z 4.84781e-07 0.200001 7.41872e-08
+Electron will recombine, Ek= 0.769888 and potential= -0.844406at R= 3.00353e-07
+Time to recombine = 0.00621559
+Origin x,y,z 3.7e-05 0.2 0
+Final x,y,z 3.34648e-05 0.200001 1.95939e-07
+Electron will recombine, Ek= 0.202748 and potential= -0.209044at R= 4.70971e-06
+Time to recombine = 0.00409423
+Origin x,y,z 9.5e-05 0.2 0
+Final x,y,z 9.50204e-05 0.2 4.71176e-06
+Electron will recombine, Ek= 0.872647 and potential= -1.07437at R= 1.98822e-07
+Time to recombine = 0.00602155
+Origin x,y,z 7.6e-05 0.2 0
+Final x,y,z 7.96942e-05 0.2 -1.51902e-06
+Electron will recombine, Ek= 0.937595 and potential= -1.09015at R= 2.17942e-07
+Time to recombine = 0.00699413
+Origin x,y,z 1.5e-05 0.2 0
+Final x,y,z 1.32148e-05 0.199999 1.09965e-06
+High kinetic energy of: 43.1247
+Force to remain below ionization threshold: 8
+Electron will recombine, Ek= 0.0459434 and potential= -0.0531678at R= 4.07638e-06
+Time to recombine = 0.00286359
+Origin x,y,z 8.3e-05 0.2 0
+Final x,y,z 8.56206e-05 0.200003 -2.33229e-06
+Electron will recombine, Ek= 2.9699 and potential= -3.12056at R= 5.19161e-08
+Time to recombine = 0.00472146
+Origin x,y,z 6.9e-05 0.2 0
+Final x,y,z 6.99169e-05 0.2 -1.91295e-07
+Electron will recombine, Ek= 0.0862789 and potential= -0.0863387at R= 4.50851e-06
+Time to recombine = 0.00815348
+Origin x,y,z 2.5e-05 0.2 0
+Final x,y,z 4.01674e-05 0.199997 -3.72645e-06
+Electron will recombine, Ek= 0.205959 and potential= -0.34348at R= 1.63289e-06
+Time to recombine = 0.0118524
+Origin x,y,z 1.6e-05 0.2 0
+Final x,y,z 1.29029e-05 0.199999 8.23028e-07
+High kinetic energy of: 16.5243
+Force to remain below ionization threshold: 8
+High kinetic energy of: 12.2977
+Force to remain below ionization threshold: 8
+Electron will recombine, Ek= 0.203939 and potential= -0.223559at R= 5.60247e-06
+Time to recombine = 0.00539308
+Origin x,y,z 9.3e-05 0.2 0
+Final x,y,z 9.24348e-05 0.200006 -1.86595e-07
+Electron will recombine, Ek= 0.0762313 and potential= -0.0783192at R= 5.62846e-06
+Time to recombine = 0.00305525
+Origin x,y,z 8.4e-05 0.2 0
+Final x,y,z 8.5251e-05 0.200004 -3.45161e-06
+Electron will recombine, Ek= 0.202626 and potential= -0.2099at R= 4.60556e-06
+Time to recombine = 0.00412524
+Origin x,y,z 8.6e-05 0.2 0
+Final x,y,z 8.84805e-05 0.200004 -1.48307e-06
+Electron will recombine, Ek= 0.398024 and potential= -0.441024at R= 4.667e-07
+Time to recombine = 0.00536185
+Origin x,y,z 5.7e-05 0.2 0
+Final x,y,z 5.7249e-05 0.200001 -1.40332e-07
+Electron will recombine, Ek= 0.225361 and potential= -0.332646at R= 5.54942e-06
+Time to recombine = 0.00517651
+Origin x,y,z 9.8e-05 0.2 0
+Final x,y,z 9.66765e-05 0.2 5.93105e-06
+Electron will recombine, Ek= 0.10175 and potential= -0.121102at R= 5.17536e-06
+Time to recombine = 0.00621181
+Origin x,y,z 1.7e-05 0.2 0
+Final x,y,z 1.90271e-05 0.199998 -4.59721e-06
+Electron will recombine, Ek= 1.30038 and potential= -1.40155at R= 1.43859e-07
+Time to recombine = 0.00929669
+Origin x,y,z 1.9e-05 0.2 0
+Final x,y,z 1.85405e-05 0.200003 -1.18716e-06
+High kinetic energy of: 13.0859
+Force to remain below ionization threshold: 8
+Electron will recombine, Ek= 0.229992 and potential= -0.230044at R= 3.30844e-06
+Time to recombine = 0.0099702
+Origin x,y,z 8e-06 0.2 0
+Final x,y,z 7.28424e-06 0.2 3.41634e-06
+Electron will recombine, Ek= 1.43735 and potential= -1.47385at R= 1.40288e-07
+Time to recombine = 0.0176397
+Origin x,y,z 6.7e-05 0.2 0
+Final x,y,z 6.52926e-05 0.2 2.76916e-07
+Electron will recombine, Ek= 0.0475956 and potential= -0.0481052at R= 4.62502e-06
+Time to recombine = 0.00555172
+Origin x,y,z 5.1e-05 0.2 0
+Final x,y,z 5.44444e-05 0.199997 -3.59769e-06
+Electron will recombine, Ek= 0.157706 and potential= -0.157732at R= 4.73381e-06
+Time to recombine = 0.00843379
+Origin x,y,z 3.2e-05 0.2 0
+Final x,y,z 2.71949e-05 0.200003 -3.92839e-06
+Electron will recombine, Ek= 1.29691 and potential= -1.45757at R= 1.31982e-07
+Time to recombine = 0.0197207
+Origin x,y,z 1.8e-05 0.2 0
+Final x,y,z 6.43645e-06 0.2 2.03463e-08
+Electron will recombine, Ek= 0.130907 and potential= -0.141718at R= 4.9647e-06
+Time to recombine = 0.006831
+Origin x,y,z 8.1e-05 0.2 0
+Final x,y,z 8.25428e-05 0.200003 -3.65852e-06
+Electron will recombine, Ek= 0.638715 and potential= -0.66449at R= 5.43644e-07
+Time to recombine = 0.0136927
+Origin x,y,z 2.9e-05 0.2 0
+Final x,y,z 3.61957e-05 0.199999 5.06174e-07
+Electron will recombine, Ek= 0.120548 and potential= -0.125263at R= 4.73106e-06
+Time to recombine = 0.00778464
+Origin x,y,z 2.1e-05 0.2 0
+Final x,y,z 2.12103e-05 0.199997 -3.36458e-06
+Electron will recombine, Ek= 0.140083 and potential= -0.14053at R= 4.54212e-06
+Time to recombine = 0.0132022
+Origin x,y,z 7.5e-05 0.2 0
+Final x,y,z 6.95913e-05 0.200003 2.85938e-06
+Electron will recombine, Ek= 0.161426 and potential= -0.161667at R= 4.40856e-06
+Time to recombine = 0.0106141
+Origin x,y,z 3.5e-05 0.2 0
+Final x,y,z 3.33691e-05 0.200003 3.42179e-06
+Electron will recombine, Ek= 0.663853 and potential= -0.682442at R= 3.81067e-07
+Time to recombine = 0.0113193
+Origin x,y,z 4.9e-05 0.2 0
+Final x,y,z 5.36983e-05 0.200001 -8.05921e-07
+Electron will recombine, Ek= 0.714123 and potential= -0.795795at R= 3.24901e-07
+Time to recombine = 0.0146325
+Origin x,y,z 2.6e-05 0.2 0
+Final x,y,z 2.75654e-05 0.2 1.04549e-06
+Electron will recombine, Ek= 0.103795 and potential= -0.280839at R= 5.61784e-06
+Time to recombine = 0.0100705
+Origin x,y,z 9.6e-05 0.2 0
+Final x,y,z 9.16546e-05 0.199996 3.58778e-06
+Electron will recombine, Ek= 0.240452 and potential= -0.270602at R= 2.53181e-06
+Time to recombine = 0.0139731
+Origin x,y,z 7.4e-05 0.2 0
+Final x,y,z 7.36841e-05 0.199998 1.70635e-06
+Electron will recombine, Ek= 0.527073 and potential= -0.531144at R= 1.33006e-06
+Time to recombine = 0.0185111
+Origin x,y,z 8.2e-05 0.2 0
+Final x,y,z 9.06399e-05 0.199999 -1.68307e-06
+Electron will recombine, Ek= 0.638376 and potential= -0.649832at R= 3.13355e-06
+Time to recombine = 0.0238456
+Origin x,y,z 7.9e-05 0.2 0
+Final x,y,z 9.24899e-05 0.200004 -1.82908e-06
+Electron will recombine, Ek= 0.310522 and potential= -0.312832at R= 1.33585e-06
+Time to recombine = 0.0152712
+Origin x,y,z 3e-05 0.2 0
+Final x,y,z 3.66022e-05 0.200001 -6.00402e-07
+Electron will recombine, Ek= 0.0289993 and potential= -0.0335157at R= 4.90008e-06
+Time to recombine = 0.0095485
+Origin x,y,z 5.3e-05 0.2 0
+Final x,y,z 5.60925e-05 0.199996 1.6015e-06
+Electron will recombine, Ek= 0.168572 and potential= -0.169448at R= 3.1071e-06
+Time to recombine = 0.0137631
+Origin x,y,z 5.4e-05 0.2 0
+Final x,y,z 5.58755e-05 0.199998 1.19879e-06
+Electron will recombine, Ek= 0.414136 and potential= -0.427216at R= 1.69347e-06
+Time to recombine = 0.0260925
+Origin x,y,z 7.8e-05 0.2 0
+Final x,y,z 7.59461e-05 0.200002 -1.78935e-06
+Electron will recombine, Ek= 1.12633 and potential= -1.28489at R= 1.50578e-07
+Time to recombine = 0.0485873
+Origin x,y,z 5.9e-05 0.2 0
+Final x,y,z 7.1656e-05 0.2 -4.46117e-07
+Electron will recombine, Ek= 0.113489 and potential= -0.193391at R= 5.6181e-06
+Time to recombine = 0.0244576
+Origin x,y,z 8e-05 0.2 0
+Final x,y,z 7.27114e-05 0.200006 -1.55813e-06
+Electron will recombine, Ek= 0.0456166 and potential= -0.139691at R= 5.61971e-06
+Time to recombine = 0.0258082
+Origin x,y,z 5.5e-05 0.2 0
+Final x,y,z 6.1753e-05 0.199994 1.34387e-06
+Electron will recombine, Ek= 0.180064 and potential= -0.180112at R= 5.61129e-06
+Time to recombine = 0.0290371
+Origin x,y,z 3.4e-05 0.2 0
+Final x,y,z 3.77686e-05 0.200004 -3.91206e-06
+Electron will recombine, Ek= 0.134964 and potential= -0.13598at R= 5.62462e-06
+Time to recombine = 0.0321968
+Origin x,y,z 5.8e-05 0.2 0
+Final x,y,z 5.74231e-05 0.200001 5.32915e-06
+Electron will recombine, Ek= 0.1021 and potential= -0.21528at R= 5.60431e-06
+Time to recombine = 0.0415997
+Origin x,y,z 4.5e-05 0.2 0
+Final x,y,z 4.58851e-05 0.200006 -2.02996e-07
+Electron will recombine, Ek= 1.58047 and potential= -1.58205at R= 3.15762e-06
+Time to recombine = 0.0964088
+Origin x,y,z 7.3e-05 0.2 0
+Final x,y,z 9.81311e-05 0.199997 1.7388e-07
+Electron will recombine, Ek= 0.0858533 and potential= -0.0860432at R= 4.72017e-06
+Time to recombine = 0.047905
+Origin x,y,z 0 0.2 0
+Final x,y,z -3.24305e-06 0.200001 1.87846e-06
+Electron will recombine, Ek= 0.125339 and potential= -0.130124at R= 5.62455e-06
+Time to recombine = 0.0557171
+Origin x,y,z 7e-06 0.2 0
+Final x,y,z -4.85467e-08 0.199998 4.52549e-06
+Electron will recombine, Ek= 0.326481 and potential= -0.326831at R= 2.96014e-06
+Time to recombine = 0.105088
+Origin x,y,z 7e-05 0.2 0
+Final x,y,z 8.26287e-05 0.200003 2.73821e-07
+Electron will recombine, Ek= 1.81399 and potential= -2.12386at R= 8.8641e-08
+Time to recombine = 0.111168
+Origin x,y,z 9e-06 0.2 0
+Final x,y,z 1.61561e-05 0.2 2.2189e-07
+Electron will recombine, Ek= 0.312247 and potential= -0.312432at R= 3.03546e-06
+Time to recombine = 0.094838
+Origin x,y,z 6.8e-05 0.2 0
+Final x,y,z 7.66806e-05 0.2 3.39266e-06
+Electron will recombine, Ek= 0.193559 and potential= -0.224505at R= 5.56767e-06
+Time to recombine = 0.0617384
+Origin x,y,z 1.4e-05 0.2 0
+Final x,y,z 1.94578e-05 0.199998 -5.06052e-06
+Electron will recombine, Ek= 0.595413 and potential= -0.612601at R= 5.09262e-07
+Time to recombine = 0.118624
+Origin x,y,z 5e-05 0.2 0
+Final x,y,z 5.32039e-05 0.199999 1.56337e-07
+Electron will recombine, Ek= 0.264975 and potential= -0.265505at R= 2.80569e-06
+Time to recombine = 0.101444
+Origin x,y,z 2.7e-05 0.2 0
+Final x,y,z 3.58675e-05 0.199999 -2.59908e-06
+Electron will recombine, Ek= 2.21811 and potential= -2.22245at R= 3.03825e-06
+Time to recombine = 0.357837
+Origin x,y,z 4.6e-05 0.2 0
+Final x,y,z 9.61289e-05 0.199999 -6.08358e-09
+Electron will recombine, Ek= 4.72228 and potential= -4.72344at R= 1.64564e-06
+Time to recombine = 0.330232
+Origin x,y,z 2.2e-05 0.2 0
+Final x,y,z 9.76118e-05 0.2 6.65354e-07
+Electron will recombine, Ek= 0.63836 and potential= -0.683133at R= 4.16743e-07
+Time to recombine = 0.214543
+Origin x,y,z 6.2e-05 0.2 0
+Final x,y,z 7.36792e-05 0.199999 2.92164e-07
+Electron will recombine, Ek= 0.142657 and potential= -0.246855at R= 5.61226e-06
+Time to recombine = 0.431655
+Origin x,y,z 3.6e-05 0.2 0
+Final x,y,z 4.46783e-05 0.200004 3.94623e-06
+Electron will recombine, Ek= 0.0493096 and potential= -0.248413at R= 5.61869e-06
+Time to recombine = 0.258033
+Origin x,y,z 1.3e-05 0.2 0
+Final x,y,z 2.25805e-05 0.200005 1.31668e-06
+Electron will recombine, Ek= 0.0848792 and potential= -0.23823at R= 5.60858e-06
+Time to recombine = 0.345558
+Origin x,y,z 2.8e-05 0.2 0
+Final x,y,z 2.80311e-05 0.199999 -5.47139e-06
+Electron will recombine, Ek= 0.443609 and potential= -0.797445at R= 5.57945e-06
+Time to recombine = 0.962397
+Origin x,y,z 8.8e-05 0.2 0
+Final x,y,z 9.31761e-05 0.200001 -4.09975e-06
+Electron will recombine, Ek= 0.115491 and potential= -0.227783at R= 5.6245e-06
+Time to recombine = 1.24473
+Origin x,y,z 5e-06 0.2 0
+Final x,y,z 1.41391e-05 0.199999 5.51346e-06
+Electron will recombine, Ek= 0.0998619 and potential= -0.204148at R= 5.59593e-06
+Time to recombine = 1.44385
+Origin x,y,z 4.4e-05 0.2 0
+Final x,y,z 6.40702e-06 0.200005 -3.03573e-06
+Electron will recombine, Ek= 0.0660344 and potential= -0.233533at R= 5.62811e-06
+Time to recombine = 1.01934
+Origin x,y,z 4.8e-05 0.2 0
+Final x,y,z 4.68607e-05 0.199996 -4.46088e-06
+Electron will recombine, Ek= 0.0264955 and potential= -0.208393at R= 5.61768e-06
+Time to recombine = 1.66941
+Origin x,y,z 6e-06 0.2 0
+Final x,y,z 3.89648e-05 0.199995 -1.06825e-06
+Electron will recombine, Ek= 0.137835 and potential= -0.20064at R= 5.61276e-06
+Time to recombine = 1.65767
+Origin x,y,z 3.3e-05 0.2 0
+Final x,y,z 3.95117e-05 0.200005 -2.6924e-06
+Electron will recombine, Ek= 0.0530545 and potential= -0.237192at R= 5.62889e-06
+Time to recombine = 1.67366
+Origin x,y,z 6e-05 0.2 0
+Final x,y,z 6.0213e-05 0.199996 -4.3864e-06
+Electron will recombine, Ek= 0.195141 and potential= -0.238722at R= 5.6041e-06
+Time to recombine = 2.71215
+Origin x,y,z 6.1e-05 0.2 0
+Final x,y,z 6.11815e-05 0.200002 4.92553e-06
+Electron will recombine, Ek= 0.967326 and potential= -1.36998at R= 4.76347e-06
+Time to recombine = 4.93017
+Origin x,y,z 8.7e-05 0.2 0
+Final x,y,z 9.92948e-05 0.200001 -7.05498e-06
+Electron will recombine, Ek= 0.0215959 and potential= -0.18401at R= 5.62868e-06
+Time to recombine = 5.14384
+Origin x,y,z 3.1e-05 0.2 0
+Final x,y,z 4.2761e-05 0.199996 -4.01841e-06
+Electron will recombine, Ek= 0.194445 and potential= -0.198262at R= 5.6068e-06
+Time to recombine = 5.85888
+Origin x,y,z 2.3e-05 0.2 0
+Final x,y,z 7.49679e-06 0.199996 4.03284e-06
+Electron will recombine, Ek= 0.127143 and potential= -0.198213at R= 5.59399e-06
+Time to recombine = 6.40466
+Origin x,y,z 5.2e-05 0.2 0
+Final x,y,z 5.17625e-05 0.199999 -5.80247e-06
+Electron will recombine, Ek= 0.892856 and potential= -0.905867at R= 5.09769e-06
+Time to recombine = 10.7605
+Origin x,y,z 2e-05 0.2 0
+Final x,y,z 0.000101149 0.199995 1.08101e-06
+Electron will recombine, Ek= 0.30579 and potential= -0.496665at R= 5.61294e-06
+Time to recombine = 11.1374
+Origin x,y,z 1e-06 0.2 0
+Final x,y,z 8.71243e-05 0.200003 -5.59587e-06
+Electron will recombine, Ek= 1.10776 and potential= -1.4286at R= 5.6074e-06
+Time to recombine = 13.0212
+Origin x,y,z 7.7e-05 0.2 0
+Final x,y,z 9.74822e-05 0.200006 -5.76067e-06
+Electron will recombine, Ek= 1.03193 and potential= -1.28465at R= 5.58275e-06
+Time to recombine = 22.0018
+Origin x,y,z 1e-05 0.2 0
+Final x,y,z 9.53221e-05 0.199994 4.82452e-06
+High kinetic energy of: 115.503
+Force to remain below ionization threshold: 8
+Electron will recombine, Ek= 0.101119 and potential= -0.207551at R= 5.62828e-06
+Time to recombine = 25.4898
+Origin x,y,z 6.5e-05 0.2 0
+Final x,y,z 1.61693e-05 0.200006 1.0379e-06
+Electron will recombine, Ek= 0.0797362 and potential= -0.27368at R= 5.62026e-06
+Time to recombine = 37.3258
+Origin x,y,z 8.5e-05 0.2 0
+Final x,y,z 6.83056e-05 0.200002 -5.1708e-06
+Electron will recombine, Ek= 1.1998 and potential= -1.40052at R= 5.61137e-06
+Time to recombine = 54.9307
+Origin x,y,z 7.1e-05 0.2 0
+Final x,y,z 9.72089e-05 0.200004 4.16598e-06
+Electron will recombine, Ek= 0.0357516 and potential= -0.30616at R= 5.62135e-06
+Time to recombine = 60.7144
+Origin x,y,z 3.9e-05 0.2 0
+Final x,y,z 7.65665e-05 0.199999 5.61193e-06
+Electron will recombine, Ek= 0.183097 and potential= -0.185023at R= 5.62147e-06
+Time to recombine = 71.5562
+Origin x,y,z 4.2e-05 0.2 0
+Final x,y,z 5.05258e-05 0.2 -5.78832e-06
+
+Information about electron 0 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (8.1e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (8.33979e-05,0.2,5.27035e-07), t1= 0, e1= 0.742141
+status = -8
+
+
+Information about electron 1 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (5.6e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (5.61833e-05,0.199995,1.98628e-06), t1= 0, e1= -0.00328794
+status = -16
+
+
+Information about electron 2 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (4.9e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (4.85793e-05,0.200001,-3.09711e-07), t1= 0, e1= 0.735541
+status = -8
+
+
+Information about electron 3 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (4.6e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (4.55399e-05,0.200001,4.90543e-07), t1= 0, e1= 0.671811
+status = -8
+
+
+Information about electron 4 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (9.8e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (9.85251e-05,0.200001,-3.47777e-07), t1= 0.000328562, e1= 0.758238
+status = -8
+
+
+Information about electron 5 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (6.1e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (6.14446e-05,0.2,9.3417e-07), t1= 0.0018334, e1= 0.60219
+status = -8
+
+
+Information about electron 6 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (2e-06,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (-2.14598e-07,0.2,1.94851e-06), t1= 0.00172953, e1= 0.437906
+status = -8
+
+
+Information about electron 7 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (9.7e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (9.82824e-05,0.2,2.15811e-06), t1= 0.00248825, e1= 0.473247
+status = -8
+
+
+Information about electron 8 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (3e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (3.01037e-05,0.199997,2.63727e-07), t1= 0.00336155, e1= 0.201345
+status = -8
+
+
+Information about electron 9 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (9.4e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (9.39277e-05,0.200003,1.74444e-06), t1= 0.0036102, e1= 0.243321
+status = -8
+
+
+Information about electron 10 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (6.9e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (6.94623e-05,0.200001,1.89545e-06), t1= 0.00514639, e1= 0.453184
+status = -8
+
+
+Information about electron 11 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (8.5e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (8.58353e-05,0.200001,-1.40105e-06), t1= 0.00433495, e1= 0.424929
+status = -8
+
+
+Information about electron 12 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (3.5e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (3.4867e-05,0.2,1.258e-06), t1= 0.00603449, e1= 0.506255
+status = -8
+
+
+Information about electron 13 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (0,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (4.84781e-07,0.200001,7.41872e-08), t1= 0.00516858, e1= 0.459782
+status = -8
+
+
+Information about electron 14 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (3.3e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (3.34648e-05,0.200001,1.95939e-07), t1= 0.00621559, e1= 0.49198
+status = -8
+
+
+Information about electron 15 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (9.5e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (9.50204e-05,0.2,4.71176e-06), t1= 0.00409423, e1= 0.203215
+status = -8
+
+
+Information about electron 16 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (8e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (7.96942e-05,0.2,-1.51902e-06), t1= 0.00602155, e1= 0.455788
+status = -8
+
+
+Information about electron 17 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (1.4e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (1.32148e-05,0.199999,1.09965e-06), t1= 0.00699413, e1= 0.484763
+status = -8
+
+
+Information about electron 18 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (8.6e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (8.56206e-05,0.200003,-2.33229e-06), t1= 0.00286359, e1= 0.0445264
+status = -8
+
+
+Information about electron 19 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (7e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (6.99169e-05,0.2,-1.91295e-07), t1= 0.00472146, e1= 3.25265
+status = -8
+
+
+Information about electron 20 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (4e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (4.01674e-05,0.199997,-3.72645e-06), t1= 0.00815348, e1= 0.0810771
+status = -8
+
+
+Information about electron 21 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (1.3e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (1.29029e-05,0.199999,8.23028e-07), t1= 0.0118524, e1= 0.207167
+status = -8
+
+
+Information about electron 22 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (9.2e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (9.24348e-05,0.200006,-1.86595e-07), t1= 0.00539308, e1= 0.204278
+status = -8
+
+
+Information about electron 23 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (8.4e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (8.5251e-05,0.200004,-3.45161e-06), t1= 0.00305525, e1= 0.0745863
+status = -8
+
+
+Information about electron 24 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (8.8e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (8.84805e-05,0.200004,-1.48307e-06), t1= 0.00412524, e1= 0.202636
+status = -8
+
+
+Information about electron 25 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (5.7e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (5.7249e-05,0.200001,-1.40332e-07), t1= 0.00536185, e1= 0.443085
+status = -8
+
+
+Information about electron 26 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (9.6e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (9.66765e-05,0.2,5.93105e-06), t1= 0.00517651, e1= 0.196794
+status = -8
+
+
+Information about electron 27 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (1.9e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (1.90271e-05,0.199998,-4.59721e-06), t1= 0.00621181, e1= 0.102022
+status = -8
+
+
+Information about electron 28 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (2e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (1.85405e-05,0.200003,-1.18716e-06), t1= 0.00929669, e1= 0.670223
+status = -8
+
+
+Information about electron 29 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (7e-06,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (7.28424e-06,0.2,3.41634e-06), t1= 0.0099702, e1= 0.220145
+status = -8
+
+
+Information about electron 30 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (6.5e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (6.52926e-05,0.2,2.76916e-07), t1= 0.0176397, e1= 1.3413
+status = -8
+
+
+Information about electron 31 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (5.4e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (5.44444e-05,0.199997,-3.59769e-06), t1= 0.00555172, e1= 0.0477132
+status = -8
+
+
+Information about electron 32 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (2.7e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (2.71949e-05,0.200003,-3.92839e-06), t1= 0.00843379, e1= 0.159335
+status = -8
+
+
+Information about electron 33 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (6e-06,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (6.43645e-06,0.2,2.03463e-08), t1= 0.0197207, e1= 1.10896
+status = -8
+
+
+Information about electron 34 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (8.3e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (8.25428e-05,0.200003,-3.65852e-06), t1= 0.006831, e1= 0.130803
+status = -8
+
+
+Information about electron 35 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (3.9e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (3.61957e-05,0.199999,5.06174e-07), t1= 0.0136927, e1= 0.404333
+status = -8
+
+
+Information about electron 36 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (2.1e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (2.12103e-05,0.199997,-3.36458e-06), t1= 0.00778464, e1= 0.121798
+status = -8
+
+
+Information about electron 37 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (7.1e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (6.95913e-05,0.200003,2.85938e-06), t1= 0.0132022, e1= 0.148915
+status = -8
+
+
+Information about electron 38 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (3.4e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (3.33691e-05,0.200003,3.42179e-06), t1= 0.0106141, e1= 0.158857
+status = -8
+
+
+Information about electron 39 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (5.3e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (5.36983e-05,0.200001,-8.05921e-07), t1= 0.0113193, e1= 0.396041
+status = -8
+
+
+Information about electron 40 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (2.8e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (2.75654e-05,0.2,1.04549e-06), t1= 0.0146325, e1= 0.510042
+status = -8
+
+
+Information about electron 41 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (9.1e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (9.16546e-05,0.199996,3.58778e-06), t1= 0.0100705, e1= 0.095218
+status = -8
+
+
+Information about electron 42 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (7.4e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (7.36841e-05,0.199998,1.70635e-06), t1= 0.0139731, e1= 0.241722
+status = -8
+
+
+Information about electron 43 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (9e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (9.06399e-05,0.199999,-1.68307e-06), t1= 0.0185111, e1= 0.521006
+status = -8
+
+
+Information about electron 44 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (9.3e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (9.24899e-05,0.200004,-1.82908e-06), t1= 0.0238456, e1= 0.674844
+status = -8
+
+
+Information about electron 45 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (3.7e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (3.66022e-05,0.200001,-6.00402e-07), t1= 0.0152712, e1= 0.31002
+status = -8
+
+
+Information about electron 46 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (5.5e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (5.60925e-05,0.199996,1.6015e-06), t1= 0.0095485, e1= 0.0296256
+status = -8
+
+
+Information about electron 47 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (5.8e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (5.58755e-05,0.199998,1.19879e-06), t1= 0.0137631, e1= 0.167288
+status = -8
+
+
+Information about electron 48 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (7.8e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (7.59461e-05,0.200002,-1.78935e-06), t1= 0.0260925, e1= 0.798098
+status = -8
+
+
+Information about electron 49 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (7.2e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (7.1656e-05,0.2,-4.46117e-07), t1= 0.0485873, e1= 0.8572
+status = -8
+
+
+Information about electron 50 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (7.3e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (7.27114e-05,0.200006,-1.55813e-06), t1= 0.0244576, e1= 0.112545
+status = -8
+
+
+Information about electron 51 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (6.2e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (6.1753e-05,0.199994,1.34387e-06), t1= 0.0258082, e1= 0.0425246
+status = -8
+
+
+Information about electron 52 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (3.8e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (3.77686e-05,0.200004,-3.91206e-06), t1= 0.0290371, e1= 0.186427
+status = -8
+
+
+Information about electron 53 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (5.9e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (5.74231e-05,0.200001,5.32915e-06), t1= 0.0321968, e1= 0.135471
+status = -8
+
+
+Information about electron 54 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (4.5e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (4.58851e-05,0.200006,-2.02996e-07), t1= 0.0415997, e1= 0.101308
+status = -8
+
+
+Information about electron 55 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (9.9e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (9.81311e-05,0.199997,1.7388e-07), t1= 0.0964088, e1= 1.68633
+status = -8
+
+
+Information about electron 56 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (1e-06,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (-3.24305e-06,0.200001,1.87846e-06), t1= 0.047905, e1= 0.0873836
+status = -8
+
+
+Information about electron 57 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (3e-06,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (-4.85467e-08,0.199998,4.52549e-06), t1= 0.0557171, e1= 0.123919
+status = -8
+
+
+Information about electron 58 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (8.2e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (8.26287e-05,0.200003,2.73821e-07), t1= 0.105088, e1= 0.32531
+status = -8
+
+
+Information about electron 59 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (1.6e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (1.61561e-05,0.2,2.2189e-07), t1= 0.111168, e1= 2.17355
+status = -8
+
+
+Information about electron 60 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (7.7e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (7.66806e-05,0.2,3.39266e-06), t1= 0.094838, e1= 0.301313
+status = -8
+
+
+Information about electron 61 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (1.8e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (1.94578e-05,0.199998,-5.06052e-06), t1= 0.0617384, e1= 0.188583
+status = -8
+
+
+Information about electron 62 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (5.2e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (5.32039e-05,0.199999,1.56337e-07), t1= 0.118624, e1= 0.422347
+status = -8
+
+
+Information about electron 63 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (3.6e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (3.58675e-05,0.199999,-2.59908e-06), t1= 0.101444, e1= 0.272902
+status = -8
+
+
+Information about electron 64 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (9.9e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (9.61289e-05,0.199999,-6.08358e-09), t1= 0.357837, e1= 2.26302
+status = -8
+
+
+Information about electron 65 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (9.9e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (9.76118e-05,0.2,6.65354e-07), t1= 0.330232, e1= 4.90696
+status = -8
+
+
+Information about electron 66 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (7.5e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (7.36792e-05,0.199999,2.92164e-07), t1= 0.214543, e1= 0.435373
+status = -8
+
+
+Information about electron 67 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (4.4e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (4.46783e-05,0.200004,3.94623e-06), t1= 0.431655, e1= 0.14199
+status = -8
+
+
+Information about electron 68 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (2.3e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (2.25805e-05,0.200005,1.31668e-06), t1= 0.258033, e1= 0.0478672
+status = -8
+
+
+Information about electron 69 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (2.9e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (2.80311e-05,0.199999,-5.47139e-06), t1= 0.345558, e1= 0.0808434
+status = -8
+
+
+Information about electron 70 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (8.9e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (9.31761e-05,0.200001,-4.09975e-06), t1= 0.962397, e1= 0.463296
+status = -8
+
+
+Information about electron 71 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (1.5e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (1.41391e-05,0.199999,5.51346e-06), t1= 1.24473, e1= 0.113381
+status = -8
+
+
+Information about electron 72 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (5e-06,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (6.40702e-06,0.200005,-3.03573e-06), t1= 1.44385, e1= 0.0965372
+status = -8
+
+
+Information about electron 73 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (4.7e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (4.68607e-05,0.199996,-4.46088e-06), t1= 1.01934, e1= 0.0648359
+status = -8
+
+
+Information about electron 74 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (4.1e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (3.89648e-05,0.199995,-1.06825e-06), t1= 1.66941, e1= 0.0257444
+status = -8
+
+
+Information about electron 75 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (4.2e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (3.95117e-05,0.200005,-2.6924e-06), t1= 1.65767, e1= 0.133558
+status = -8
+
+
+Information about electron 76 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (6e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (6.0213e-05,0.199996,-4.3864e-06), t1= 1.67366, e1= 0.0537185
+status = -8
+
+
+Information about electron 77 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (6.3e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (6.11815e-05,0.200002,4.92553e-06), t1= 2.71215, e1= 0.193057
+status = -8
+
+
+Information about electron 78 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (9.9e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (9.92948e-05,0.200001,-7.05498e-06), t1= 4.93017, e1= 0.361981
+status = -8
+
+
+Information about electron 79 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (4.3e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (4.2761e-05,0.199996,-4.01841e-06), t1= 5.14384, e1= 0.0216437
+status = -8
+
+
+Information about electron 80 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (8e-06,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (7.49679e-06,0.199996,4.03284e-06), t1= 5.85888, e1= 0.188908
+status = -8
+
+
+Information about electron 81 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (5.1e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (5.17625e-05,0.199999,-5.80247e-06), t1= 6.40466, e1= 0.121847
+status = -8
+
+
+Information about electron 82 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (9.9e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (0.000101149,0.199995,1.08101e-06), t1= 10.7605, e1= 0.526005
+status = -8
+
+
+Information about electron 83 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (8.7e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (8.71243e-05,0.200003,-5.59587e-06), t1= 11.1374, e1= 0.304436
+status = -8
+
+
+Information about electron 84 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (9.9e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (9.74822e-05,0.200006,-5.76067e-06), t1= 13.0212, e1= 0.535608
+status = -8
+
+
+Information about electron 85 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (9.9e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (9.53221e-05,0.199994,4.82452e-06), t1= 22.0018, e1= 0.437599
+status = -8
+
+
+Information about electron 86 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (1.7e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (1.61693e-05,0.200006,1.0379e-06), t1= 25.4898, e1= 0.0999475
+status = -8
+
+
+Information about electron 87 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (6.8e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (6.83056e-05,0.200002,-5.1708e-06), t1= 37.3258, e1= 0.079149
+status = -8
+
+
+Information about electron 88 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (9.9e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (9.72089e-05,0.200004,4.16598e-06), t1= 54.9307, e1= 1.10136
+status = -8
+
+
+Information about electron 89 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (7.6e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (7.65665e-05,0.199999,5.61193e-06), t1= 60.7144, e1= 0.0351537
+status = -8
+
+
+Information about electron 90 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (5e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (5.05258e-05,0.2,-5.78832e-06), t1= 71.5562, e1= 0.179891
+status = -8
+
+
+Information about electron 91 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (9.9e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (0.000293839,0.200201,-0.000185018), t1= 100, e1= 0.0247258
+status = -17
+
+
+Information about electron 92 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (1.2e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (0.000124274,0.199863,9.17363e-05), t1= 100, e1= 0.0305487
+status = -17
+
+
+Information about electron 93 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (7.9e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (-2.62421e-05,0.200064,7.46986e-05), t1= 100, e1= 0.0084561
+status = -17
+
+
+Information about electron 94 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (4.8e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (4.93374e-06,0.199991,-0.000104009), t1= 100, e1= 0.0690617
+status = -17
+
+
+Information about electron 95 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (3.2e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (-4.46188e-05,0.200198,2.0571e-05), t1= 100, e1= 0.00162969
+status = -17
+
+
+Information about electron 96 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (6.4e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (-0.000137619,0.199998,8.44866e-05), t1= 100, e1= 1.26662
+status = -17
+
+
+Information about electron 97 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (6.6e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (-4.56511e-05,0.200181,0.000158711), t1= 100, e1= 0.0204639
+status = -17
+
+
+Information about electron 98 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (1.1e-05,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (-3.17969e-05,0.19997,-0.000203107), t1= 100, e1= 0.0126394
+status = -17
+
+
+Information about electron 99 from avalanche 0 which ended with a strange status:
+(x0,y0,z0)= (4e-06,0.2,0), t0= 0, e0= 0.2
+(x1,y1,z1)= (-0.000107784,0.200091,-0.000113713), t1= 100, e1= 0.0322509
+status = -17
+
+number of electrons: 100 (0 of them ended in the top electrode and 0 in the bottom electrode)
+number of ionisations: 0
+number of excitations: 0
+number of elastic collisions: 1144202473
+
+
+
+Average number of emitted VUV photons: 0
+Determined value of J: nan

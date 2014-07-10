@@ -1,0 +1,17 @@
+Hi Yasu,
+
+I've made the code itself globally readable so that you can copy it over and modify/run it as you like. The folder path (garfpp_recomb) is here: /global/project/projectdirs/hpx/megan_work/garfpp_recomb
+
+To compile this you'll need to add the line
+export GARFIELD_/path_to_folder_
+to the .bashrc.ext file in your home directory. Then execute the command 'make' in garfpp_recomb if you've changed any of the source files, and then 'make' in hpxe_scripts (a folder in garfpp_recomb) (but only after the file example.C has been modified - but the makefile will only link example.C to changes in the source files if example.C itself has been modified since the last make ... you can use 'touch example.C' to "modify" the file enough to trigger the ability to compile it).
+
+What is currently line 76 in /global/project/projectdirs/hpx/megan_work/garfpp_recomb/hpxe_scripts/example.C is where I've documented the current command line arguments that can be used when running the code. In general, it looks like this: ./example electric_field number_of_instances pairs_per_cloud runtime energy pressure angle recomb_condition gas_mix input_file movie_frames ion_dist_multipiler - or ./example 100 1 10 .1 0 10 0 1 2TMA98Xe none 0 1 (run this in the command line to get a basic idea of what the output looks like; simulation time is very short, so it should finish within 10s.) At the end, electrons with a status of -8 recombined, and just ran until time finished when status = -17.
+
+example.C sets up the simulation conditions, and then calls TransportCloud() in AvalancheMicroscopic.cc (via AvalancheCloud()) in garfpp_recomb/Source to do all of the calculations.(Make sure you're not in the TransportElectron() section, which is just for one electron - TransportCloud() was built from TransportElectron(), so they have similar code.)
+
+I haven't looked at much of the code that deals with magnetic fields to see whether it has been or needs to be modified to handle simulating multiple electron-ion pairs at once, but the presence of a magnetic field in general is something you'd need to add to example.C to set up the initial conditions. 
+
+I'll go over this and answer any questions in person, but I hope the above will be enough to get you started if you have time to do so before that happens. Let me know if something seems not to work, too.
+
+ 

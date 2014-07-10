@@ -1,0 +1,203 @@
+RandomEngineRoot:
+    Generator type: TRandom3
+    Seed: 1375761847
+Electric Field of 300 volt per cm
+MediumMagboltz::SetComposition:
+    CH4/Xe (1/99)
+SolidBox:
+    -1 < x [cm] < 1
+    -0.74 < y [cm] < 0.74
+    -1 < z [cm] < 1
+Avalanche 1 of 1:
+the primary electron started its drift at (x,y,z,) = ( 0x7fffad91bbb0 , 0x7fffad91b880 , 0x7fffad91b550) [cm] with an energy of 0x7fffad91b220 [eV]
+Sensor::SetArea:
+    -1 < x [cm] < 1
+    -0.74 < y [cm] < 0.74
+    -1 < z [cm] < 1
+Electron will recombine, Ek= 0.263343 and potential= -0.323155at R= 5.27637e-06
+Time to recombine = 0
+Origin x,y,z 7.9e-05 0.2 0
+Final x,y,z 8.31377e-05 0.2 -3.81521e-06
+Electron will recombine, Ek= 0.141525 and potential= -0.205708at R= 2.94648e-06
+Time to recombine = 0
+Origin x,y,z 7.8e-05 0.2 0
+Final x,y,z 7.79051e-05 0.199999 -5.59957e-06
+Electron will recombine, Ek= 0.166797 and potential= -0.179637at R= 4.37517e-06
+Time to recombine = 0
+Origin x,y,z 7.7e-05 0.2 0
+Final x,y,z 7.33011e-05 0.200003 2.78489e-06
+Electron will recombine, Ek= 0.348997 and potential= -0.506455at R= 1.02365e-06
+Time to recombine = 0
+Origin x,y,z 7.6e-05 0.2 0
+Final x,y,z 7.1284e-05 0.200003 -1.46077e-07
+Electron will recombine, Ek= 0.202405 and potential= -0.265833at R= 5.44019e-06
+Time to recombine = 0
+Origin x,y,z 7.5e-05 0.2 0
+Final x,y,z 7.71855e-05 0.199998 -4.96539e-06
+Electron will recombine, Ek= 0.201538 and potential= -0.358155at R= 2.31216e-06
+Time to recombine = 0
+Origin x,y,z 7.2e-05 0.2 0
+Final x,y,z 7.24869e-05 0.200002 5.13524e-06
+Electron will recombine, Ek= 0.254594 and potential= -0.296557at R= 4.5522e-06
+Time to recombine = 0
+Origin x,y,z 7.1e-05 0.2 0
+Final x,y,z 7.52079e-05 0.200004 -4.98823e-07
+Electron will recombine, Ek= 0.533255 and potential= -0.757486at R= 1.64233e-06
+Time to recombine = 0
+Origin x,y,z 7e-05 0.2 0
+Final x,y,z 7.16259e-05 0.199997 4.55794e-06
+Electron will recombine, Ek= 0.238934 and potential= -0.276414at R= 5.0093e-06
+Time to recombine = 0
+Origin x,y,z 6.9e-05 0.2 0
+Final x,y,z 7.3017e-05 0.2 3.91462e-06
+Electron will recombine, Ek= 0.462037 and potential= -0.664827at R= 2.85064e-06
+Time to recombine = 0
+Origin x,y,z 6.8e-05 0.2 0
+Final x,y,z 7.33018e-05 0.200002 -9.91008e-07
+Electron will recombine, Ek= 0.26215 and potential= -0.296819at R= 4.51766e-06
+Time to recombine = 0
+Origin x,y,z 6.7e-05 0.2 0
+Final x,y,z 6.53981e-05 0.200005 1.88205e-06
+Electron will recombine, Ek= 0.343458 and potential= -0.489991at R= 1.92864e-06
+Time to recombine = 0
+Origin x,y,z 6.5e-05 0.2 0
+Final x,y,z 6.29829e-05 0.200004 3.00817e-06
+Electron will recombine, Ek= 0.112484 and potential= -0.137925at R= 4.54815e-06
+Time to recombine = 0
+Origin x,y,z 5.8e-05 0.2 0
+Final x,y,z 5.4065e-05 0.2 4.02089e-06
+Electron will recombine, Ek= 0.21841 and potential= -0.259472at R= 5.59384e-06
+Time to recombine = 0
+Origin x,y,z 5.6e-05 0.2 0
+Final x,y,z 5.80906e-05 0.200001 5.16933e-06
+Electron will recombine, Ek= 0.277151 and potential= -0.37112at R= 5.19724e-06
+Time to recombine = 0
+Origin x,y,z 5.2e-05 0.2 0
+Final x,y,z 5.62187e-05 0.199997 2.41126e-06
+Electron will recombine, Ek= 0.176619 and potential= -0.342853at R= 5.1053e-06
+Time to recombine = 0
+Origin x,y,z 4.9e-05 0.2 0
+Final x,y,z 5.21918e-05 0.200005 -1.08526e-07
+Electron will recombine, Ek= 0.219538 and potential= -0.298703at R= 4.85866e-06
+Time to recombine = 0
+Origin x,y,z 4.8e-05 0.2 0
+Final x,y,z 5.12577e-05 0.200001 4.54729e-06
+Electron will recombine, Ek= 0.328939 and potential= -0.379955at R= 3.23253e-06
+Time to recombine = 0
+Origin x,y,z 4.6e-05 0.2 0
+Final x,y,z 4.8369e-05 0.2 -5.09669e-06
+Electron will recombine, Ek= 0.271938 and potential= -0.332345at R= 4.27603e-06
+Time to recombine = 0
+Origin x,y,z 4.5e-05 0.2 0
+Final x,y,z 4.91085e-05 0.200002 3.48651e-06
+Electron will recombine, Ek= 0.148544 and potential= -0.172557at R= 5.19194e-06
+Time to recombine = 0
+Origin x,y,z 4.4e-05 0.2 0
+Final x,y,z 4.72524e-05 0.199996 2.51791e-06
+Electron will recombine, Ek= 0.371581 and potential= -0.381747at R= 3.0663e-06
+Time to recombine = 0
+Origin x,y,z 4.2e-05 0.2 0
+Final x,y,z 4.10031e-05 0.199995 2.70269e-06
+Electron will recombine, Ek= 0.424141 and potential= -0.451779at R= 3.01957e-06
+Time to recombine = 0
+Origin x,y,z 3.9e-05 0.2 0
+Final x,y,z 3.85329e-05 0.199995 -1.70563e-06
+Electron will recombine, Ek= 0.191969 and potential= -0.305096at R= 5.11608e-06
+Time to recombine = 0
+Origin x,y,z 3.8e-05 0.2 0
+Final x,y,z 3.93304e-05 0.199996 3.63257e-06
+Electron will recombine, Ek= 0.373463 and potential= -0.411139at R= 2.76227e-06
+Time to recombine = 0
+Origin x,y,z 3.5e-05 0.2 0
+Final x,y,z 3.60456e-05 0.200003 4.89323e-06
+Electron will recombine, Ek= 0.221229 and potential= -0.299308at R= 5.32343e-06
+Time to recombine = 0
+Origin x,y,z 3.4e-05 0.2 0
+Final x,y,z 3.6601e-05 0.199996 2.52044e-06
+Electron will recombine, Ek= 0.33525 and potential= -0.398823at R= 3.55204e-06
+Time to recombine = 0
+Origin x,y,z 3.2e-05 0.2 0
+Final x,y,z 3.3271e-05 0.200005 -2.74653e-07
+Electron will recombine, Ek= 0.128 and potential= -0.134957at R= 5.01525e-06
+Time to recombine = 0
+Origin x,y,z 3.1e-05 0.2 0
+Final x,y,z 2.63605e-05 0.199999 2.95361e-06
+Electron will recombine, Ek= 0.231371 and potential= -0.252204at R= 5.07642e-06
+Time to recombine = 0
+Origin x,y,z 2.8e-05 0.2 0
+Final x,y,z 2.82062e-05 0.2 5.62496e-06
+Electron will recombine, Ek= 0.1429 and potential= -0.395461at R= 2.41745e-06
+Time to recombine = 0
+Origin x,y,z 2.7e-05 0.2 0
+Final x,y,z 2.28794e-05 0.200001 3.73264e-06
+Electron will recombine, Ek= 0.340484 and potential= -0.373745at R= 4.16542e-06
+Time to recombine = 0
+Origin x,y,z 2.5e-05 0.2 0
+Final x,y,z 2.96504e-05 0.199997 -1.11152e-06
+Electron will recombine, Ek= 0.306962 and potential= -0.464127at R= 2.31676e-06
+Time to recombine = 0
+Origin x,y,z 2.2e-05 0.2 0
+Final x,y,z 2.0435e-05 0.200002 -4.80852e-06
+Electron will recombine, Ek= 0.545461 and potential= -0.653441at R= 9.29182e-07
+Time to recombine = 0
+Origin x,y,z 1.8e-05 0.2 0
+Final x,y,z 1.65533e-05 0.200004 3.20541e-06
+Electron will recombine, Ek= 0.214463 and potential= -0.383687at R= 3.87652e-06
+Time to recombine = 0
+Origin x,y,z 1.5e-05 0.2 0
+Final x,y,z 1.96675e-05 0.200001 -3.03054e-06
+Electron will recombine, Ek= 0.229506 and potential= -0.283564at R= 4.84704e-06
+Time to recombine = 0
+Origin x,y,z 1.3e-05 0.2 0
+Final x,y,z 1.36704e-05 0.2 -5.58432e-06
+Electron will recombine, Ek= 0.259388 and potential= -0.369041at R= 4.84685e-06
+Time to recombine = 0
+Origin x,y,z 1.2e-05 0.2 0
+Final x,y,z 1.29055e-05 0.199994 5.73828e-08
+Electron will recombine, Ek= 0.139613 and potential= -0.341746at R= 4.50368e-06
+Time to recombine = 0
+Origin x,y,z 1e-05 0.2 0
+Final x,y,z 1.37058e-05 0.200001 -3.99416e-06
+Electron will recombine, Ek= 0.296598 and potential= -0.492573at R= 2.78147e-06
+Time to recombine = 0
+Origin x,y,z 9e-06 0.2 0
+Final x,y,z 1.41619e-05 0.2 -2.24287e-06
+Electron will recombine, Ek= 0.283414 and potential= -0.384946at R= 4.18735e-06
+Time to recombine = 0
+Origin x,y,z 8e-06 0.2 0
+Final x,y,z 1.27139e-05 0.199998 2.17241e-06
+Electron will recombine, Ek= 0.256009 and potential= -0.337359at R= 5.13836e-06
+Time to recombine = 0
+Origin x,y,z 7e-06 0.2 0
+Final x,y,z 1.0824e-05 0.200004 -1.08144e-06
+Electron will recombine, Ek= 0.199985 and potential= -0.262237at R= 4.10709e-06
+Time to recombine = 0
+Origin x,y,z 2e-06 0.2 0
+Final x,y,z 3.03467e-06 0.199999 5.49648e-06
+Electron will recombine, Ek= 0.113424 and potential= -0.308295at R= 5.08529e-06
+Time to recombine = 0
+Origin x,y,z 0 0.2 0
+Final x,y,z 2.32921e-06 0.199999 5.04989e-06
+Electron will recombine, Ek= 1.08795 and potential= -1.52985at R= 4.45042e-06
+Time to recombine = 0.00832477
+Origin x,y,z 9.3e-05 0.2 0
+Final x,y,z 8.29562e-05 0.199973 -3.17872e-06
+Electron will recombine, Ek= 0.519525 and potential= -1.47111at R= 2.01454e-06
+Time to recombine = 0.00614222
+Origin x,y,z 9.2e-05 0.2 0
+Final x,y,z 8.49497e-05 0.200008 -3.32163e-06
+Electron will recombine, Ek= 0.371611 and potential= -0.638159at R= 3.81872e-06
+Time to recombine = 0.00779927
+Origin x,y,z 6.2e-05 0.2 0
+Final x,y,z 7.96847e-05 0.200002 -1.71475e-05
+Electron will recombine, Ek= 0.334666 and potential= -0.429637at R= 3.92435e-06
+Time to recombine = 0.00812517
+Origin x,y,z 4e-06 0.2 0
+Final x,y,z 7.3405e-06 0.20002 8.48518e-06
+Electron will recombine, Ek= 0.485964 and potential= -0.52487at R= 5.39908e-06
+Time to recombine = 0.0135011
+Origin x,y,z 8.4e-05 0.2 0
+Final x,y,z 7.41383e-05 0.199976 8.63285e-06
+Electron will recombine, Ek= 0.21243 and potential= -0.409481at R= 3.72432e-06
+Time to recombine = 0.0149913
+Origin x,y,z 8

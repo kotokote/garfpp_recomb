@@ -1,0 +1,5 @@
+#!/bin/bash
+awk '{if ($1=="Information"){rec="";rec = $4} if ($1=="(x0,y0,z0)="){rec = rec" "$2" "$4" "$6} if($1=="(x1,y1,z1)="){rec = rec" "$2" "$4" "$6} if ($1=="status"){rec=rec" "$3;print rec}}'  $1 | sed 's/(/ /g' | sed 's/)/ /g' | sed 's/,/ /g'
+
+VAR=$1.list
+echo $VAR
