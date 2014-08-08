@@ -12,8 +12,8 @@
 import subprocess
 #import os
 
-DATA_PATH = '/Users/nakajima/Work/HPXeTPC/garfpp_recomb/'
-EXAMPLE_PATH = '/Users/nakajima/Work/HPXeTPC/garfpp_recomb/hpxe_scripts'
+DATA_PATH = '/global/homes/y/ynakajim/mywork_hpxe/garfpp_recomb/batch_jobs/'
+EXAMPLE_PATH = '/global/homes/y/ynakajim/mywork_hpxe/garfpp_recomb/hpxe_scripts/'
 EXAMPLE = './example'
 
 electricFields = ['1','50','100','200','300','450','600','800','1000','1500','2000','2500']
@@ -74,7 +74,7 @@ def writeJobDefinition(jobName, bashFileName, command):
 # Make sure the directory structure is present
 #print "Creating directory structure..."
 
-bashDirectory = DATA_PATH + 'batch'
+bashDirectory = DATA_PATH + 'batch_scripts'
 outputDirectory = DATA_PATH + 'output'
 
 #if (not os.path.exists(bashDirectory)):

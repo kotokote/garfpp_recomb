@@ -63,6 +63,7 @@
 // minDistIon, and frame 1 is equivalent to the 'final simultaneous' printout. also added statement to declare all initial conditions explicitly.
 // in version 21: added mdi0 and mdimax to struct electron; now available in final printout and in movie frame info. mdimax is also in recomb 
 // message.
+// in version 22: Added an option to apply magnetic field parallel to the electric field.
 
 // ** changed nCollSkip to 1 instead of 100 midst v16
 
@@ -165,13 +166,14 @@ public:
 int main(int argc, char * argv[]) {
 
 // print version of the code for reference
-cout << endl << "example.C version 21" << endl << endl;
+cout << endl << "example.C version 22" << endl << endl;
 
 // make precision of cout 12
 cout.precision(12);
 
 //initialize variables for command line arguments in case they're not specified
 double efield = 100;
+double bfield = 0;
 int numclouds = 1;
 int elpercloud = 1;
 double runtime = 10;		// default 10 ns
@@ -226,6 +228,8 @@ if (argc > 8 && atoi(argv[8])==0) {
 cout << "Gas mix is ";
 if (argc > 9) cout << string(argv[9]) << endl;
 else cout << "Xe" << endl;
+
+
 
 // 10th argument - text file for positions, open and see if number of entries matches elpercloud=argv[3]
 // default is to use lines of electron-ion pairs - if both an input file and an angle are specified, 
@@ -300,6 +304,13 @@ cout << "Ions will be placed " << iondist*1e7 << " nm apart in a line at " << el
 << " x the default alpha particle density of " << 1e-5/atof(argv[6])*1e7 << " nm for this pressure." 
 << " Total length of ion column is " << iondist*(elpercloud-1)*1e4 << " um." << endl;
 
+
+// 13th argument is the strength of magnetic field
+if (argc > 13 && atof(argv[13]) != 0) bfield = atof(argv[13]);
+ cout << "Magnetic Field of " << bfield << " T\n";
+
+
+ 
 // check arguments
 //cout << "energy " << eleng << " pressure " << p << " iondist " << iondist << " eltheta " << eltheta << endl << endl;
 
@@ -359,6 +370,9 @@ for (int nef = 0; nef < 1; nef++) {           //control number of geometries to 
   comp->SetGeometry(geo);
   comp->AddPlaneY(0.0, 0.0,"b");
   comp->AddPlaneY(yGap+0.2, v,"t");
+  
+  comp->SetMagneticField(0.0,bfield,0.0);
+
   
   // Make a sensor
   Sensor* sensor = new Sensor();
