@@ -52,6 +52,7 @@ void make_movie(){
       if (iele == 2) cout << x << " " << y << " " << z << " " << t << endl;
 
       
+      if (cur_frame > 10) break;
       if (cur_frame != iframe){
 	c1->cd(1);
 	h_xy->Draw("zcol");
