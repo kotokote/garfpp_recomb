@@ -23,8 +23,8 @@ void make_movie(){
   Double_t x, y, z, t, kE,potential,kx,ky,kz,minDistIon;
   TString dummy;
 
-  TH2D * h_xy = new TH2D("h_xy","h_xy",100,-0.001,0.001,100,-0.001,0.001);
-  TH2D * h_zy = new TH2D("h_zy","h_zy",100,-0.001,0.001,100,-0.001,0.001);
+  TH2D * h_xy = new TH2D("h_xy","h_xy",100,-0.0001,0.0001,100,-0.0001,0.0001);
+  TH2D * h_zy = new TH2D("h_zy","h_zy",100,-0.0001,0.0001,100,-0.0001,0.0001);
   Int_t cur_frame = 0;
   TCanvas * c1 = new TCanvas("c1","c1",1200,600);
   c1->Divide(2,1);
@@ -42,7 +42,7 @@ void make_movie(){
     if (stmp == "movie"){
       //      cout <<line << endl;
       //      count ++;
-
+      
       lineStr >> stmp >> iframe >> stmp >> stmp >>  time >> stmp >> stmp >> stmp >> iele;
       //      cout << iframe <<" " <<  time << " " << iele << endl;;
 
@@ -52,19 +52,19 @@ void make_movie(){
       if (iele == 2) cout << x << " " << y << " " << z << " " << t << endl;
 
       
-      if (cur_frame > 10) break;
+      if (cur_frame > 100) break;
       if (cur_frame != iframe){
-	c1->cd(1);
-	h_xy->Draw("zcol");
-	c1->cd(2);
-	h_zy->Draw("zcol");
-	// 	c1->Update();
-	// 	cin >> dummy;
-	
-	c1->Print("test.gif+1");
-	h_xy->Reset();
-	h_zy->Reset();
-	cur_frame = iframe;
+        cur_frame = iframe;
+        c1->cd(1);
+        h_xy->Draw("zcol");
+        c1->cd(2);
+        h_zy->Draw("zcol");
+        // 	c1->Update();
+        // 	cin >> dummy;
+        
+        c1->Print(Form("frames/test_%d.png",cur_frame));
+        h_xy->Reset();
+        h_zy->Reset();
       }
       h_xy->Fill(x,y);
       h_zy->Fill(z,y);
@@ -73,12 +73,12 @@ void make_movie(){
     }
   }
 
-  //Draw the last frame
-  c1->cd(1);
-  h_xy->Draw("zcol");
-  c1->cd(2);
-  h_zy->Draw("zcol");
-  c1->Print("test.gif+1");
+  // //Draw the last frame
+  // c1->cd(1);
+  // h_xy->Draw("zcol");
+  // c1->cd(2);
+  // h_zy->Draw("zcol");
+  // c1->Print(Form("frames/test_%d.png",cur_frame));
   
 
 }
