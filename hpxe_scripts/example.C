@@ -387,8 +387,14 @@ for (int nef = 0; nef < 1; nef++) {           //control number of geometries to 
 
   // Make a microscopic tracking class for electron transport
   AvalancheMicroscopic* aval = new AvalancheMicroscopic();
+
+  // Enable B-filed simulation if magnetic field is set
+  if (bfield != 0){
+    aval->EnableMagneticField();
+  }
+
   aval->SetSensor(sensor);
- 
+
   //energy histogram:
   // TH1D *histen = new TH1D("hen","energy distribution",1000,0.0,100.0);
   // TH1D *histdiff = new TH1D("hdiff","transverse position distribution (cm)",100,0.0,1.0);

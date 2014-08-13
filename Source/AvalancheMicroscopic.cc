@@ -2447,6 +2447,8 @@ bool AvalancheMicroscopic::TransportCloud(
         emag = sqrt(ex * ex + ey * ey + ez * ez);
         if (bmag > Small && emag > Small) bOk = true;
         else bOk = false;
+
+        //        std::cout << "Debug : Applying magnetic field: " << bmag << " " << emag << " " << bOk << std::endl;
       }
 
       // Trace the electron/hole. 
@@ -2787,6 +2789,8 @@ std::cout << "current collisions. elastic: " << pnElastic << " ionizations: " <<
           vy = ky; vz = kz;
           // Rotate back to the lab frame.
           RotateLocal2Global(vx, vy, vz);
+
+          //          std::cout << "Yasu: " << vx << " " << vy << " " << vz << std::endl;
         } else if (useBandStructure) {
           // Update the wave-vector.
           newKx = kx + ex * dt * SpeedOfLight;
