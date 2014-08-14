@@ -19,6 +19,9 @@ void makeroot(TString input_filename, TString output_filename){
   Double_t z[ne_max];
   Double_t t[ne_max];
   Double_t kE[ne_max];
+  Double_t sigma_r;
+  Double_t sigma_y;
+  Double_t mean_y;
 
 
   TFile * fout = new TFile(output_filename.Data(),"recreate");
@@ -30,8 +33,10 @@ void makeroot(TString input_filename, TString output_filename){
   tr->Branch("z",z,"z[ne]/D");
   tr->Branch("t",t,"t[ne]/D");
   tr->Branch("kE",kE,"kE[ne]/D");
+  tr->Branch("sigma_r",&sigma_r,"sigma_r/D");
+  tr->Branch("sigma_y",&sigma_y,"sigma_y/D");
+  tr->Branch("mean_y",&mean_y,"mean_y/D");
   
-
   
   string line;
 
@@ -69,11 +74,37 @@ void makeroot(TString input_filename, TString output_filename){
       getline(fin,line);
       istringstream lineStr2(line);
       lineStr2 >> x_tmp >> y_tmp >> z_tmp >> t_tmp >> kE_tmp >> potential >> kx >> ky >> kz >> minDistIon;
-      
+
       x_tmp*= cm_to_um;
       y_tmp*= cm_to_um;
       z_tmp*= cm_to_um;
 
+      
+      
+      if (cur_frame != iframe){
+        // do a little analysis
+        sigma_r = 0;
+        sigma_y = 0;
+        mean_y = 0;
+        for (Int_t i = 0; i < ne; i++){
+          sigma_r += x[i]*x[i] + z[i]*z[i];
+          mean_y += y[i];
+        }
+        sigma_r = sqrt(sigma_r/(Double_t)ne);
+        mean_y = mean_y/(Double_t)ne;
+        for (Int_t i = 0; i < ne; i++){
+          sigma_y += pow(y[i]-mean_y,2);
+        }
+        sigma_y = sqrt(sigma_y/(Double_t)(ne-1));
+        
+        
+        // fill tree here
+        tr->Fill();
+        ne = 0;
+        cur_frame = iframe;
+      }
+
+      
       id[ne] = iele;
       x[ne] = x_tmp;
       y[ne] = y_tmp;
@@ -82,15 +113,25 @@ void makeroot(TString input_filename, TString output_filename){
       kE[ne] = kE_tmp;
       ne++;
       
-      if (cur_frame != iframe){
-	// fill tree here
-	tr->Fill();
-	ne = 0;
-      }
-      
     }
   }
-
+  // do a little analysis
+  sigma_r = 0;
+  sigma_y = 0;
+  mean_y = 0;
+  for (Int_t i = 0; i < ne; i++){
+    sigma_r += x[i]*x[i] + z[i]*z[i];
+    mean_y += y[i];
+  }
+  sigma_r = sqrt(sigma_r/(Double_t)ne);
+  mean_y = mean_y/(Double_t)ne;
+  for (Int_t i = 0; i < ne; i++){
+    sigma_y += pow(y[i]-mean_y,2);
+  }
+  sigma_y = sigma_y/(Double_t)(ne-1);
+  
+  tr->Fill();
+  tr->Write();
   fout->Close();
   
 }
