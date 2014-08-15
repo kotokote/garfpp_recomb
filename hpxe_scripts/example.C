@@ -346,6 +346,7 @@ for (int nef = 0; nef < 1; nef++) {           //control number of geometries to 
 
   // 9th command line argument: default 100% Xe if 'Xe' or unrecognizable - also 4CH496Xe and 2TMA98Xe
   if (argc > 9 && string(argv[9])=="2TMA98Xe") gas->SetComposition("Ne", 0.0, "CH4", 0.0, "Xe", 98.0, "CF4", 0.0, "TMA", 2.0);
+  else if (argc > 9 && string(argv[9])=="10TMA90Xe") gas->SetComposition("Ne", 0.0, "CH4", 0.0, "Xe", 90.0, "CF4", 0.0, "TMA", 10.0);
   else if (argc > 9 && string(argv[9])=="4CH496Xe") gas->SetComposition("Ne", 0.0, "CH4", 4.0, "Xe", 96.0, "CF4", 0.0, "TMA", 0.0);
   else if (argc > 9 && string(argv[9])=="Xe") gas->SetComposition("Ne", 0.0, "CH4", 0.0, "Xe", 100.0, "CF4", 0.0, "TMA", 0.0);
   else gas->SetComposition("Ne", 0.0, "CH4", 0.0, "Xe", 100.0, "CF4", 0.0);
