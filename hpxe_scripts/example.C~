@@ -63,6 +63,8 @@
 // minDistIon, and frame 1 is equivalent to the 'final simultaneous' printout. also added statement to declare all initial conditions explicitly.
 // in version 21: added mdi0 and mdimax to struct electron; now available in final printout and in movie frame info. mdimax is also in recomb 
 // message.
+// in version 22: Yasu: Added an option to apply magnetic field parallel to the electric field.
+// in version 23: Yasu: Added an option to change the temparature and also option to use Ar gas
 
 // ** changed nCollSkip to 1 instead of 100 midst v16
 
@@ -165,13 +167,14 @@ public:
 int main(int argc, char * argv[]) {
 
 // print version of the code for reference
-cout << endl << "example.C version 21" << endl << endl;
+cout << endl << "example.C version 23" << endl << endl;
 
 // make precision of cout 12
 cout.precision(12);
 
 //initialize variables for command line arguments in case they're not specified
 double efield = 100;
+double bfield = 0;
 int numclouds = 1;
 int elpercloud = 1;
 double runtime = 10;		// default 10 ns
@@ -226,6 +229,8 @@ if (argc > 8 && atoi(argv[8])==0) {
 cout << "Gas mix is ";
 if (argc > 9) cout << string(argv[9]) << endl;
 else cout << "Xe" << endl;
+
+
 
 // 10th argument - text file for positions, open and see if number of entries matches elpercloud=argv[3]
 // default is to use lines of electron-ion pairs - if both an input file and an angle are specified, 
@@ -300,6 +305,19 @@ cout << "Ions will be placed " << iondist*1e7 << " nm apart in a line at " << el
 << " x the default alpha particle density of " << 1e-5/atof(argv[6])*1e7 << " nm for this pressure." 
 << " Total length of ion column is " << iondist*(elpercloud-1)*1e4 << " um." << endl;
 
+
+// 13th argument is the strength of magnetic field
+if (argc > 13 && atof(argv[13]) != 0) bfield = atof(argv[13]);
+ cout << "Magnetic Field of " << bfield << " T\n";
+
+// 14th argument is the temparature
+ double temp=293.15;                           //temperature [K];
+ //double temp=0.1;                           //temperature [K];
+if (argc > 14 && atof(argv[14]) != 0) temp = atof(argv[14]);
+ cout << "Temperature of " << temp << " K\n";
+
+
+ 
 // check arguments
 //cout << "energy " << eleng << " pressure " << p << " iondist " << iondist << " eltheta " << eltheta << endl << endl;
 
@@ -324,8 +342,6 @@ for (int nef = 0; nef < 1; nef++) {           //control number of geometries to 
   //gas parameters
   //pressure now set above as command line arg, 7600 by default
   //double p=7600.;                                 //pressure [Torr] 10atm 
-  double temp=293.15;                           //temperature [K];
-  //double temp=0.1;                           //temperature [K];
 
   // Make a gas medium
   MediumMagboltz* gas = new MediumMagboltz();
@@ -335,7 +351,16 @@ for (int nef = 0; nef < 1; nef++) {           //control number of geometries to 
 
   // 9th command line argument: default 100% Xe if 'Xe' or unrecognizable - also 4CH496Xe and 2TMA98Xe
   if (argc > 9 && string(argv[9])=="2TMA98Xe") gas->SetComposition("Ne", 0.0, "CH4", 0.0, "Xe", 98.0, "CF4", 0.0, "TMA", 2.0);
+  else if (argc > 9 && string(argv[9])=="10TMA90Xe") gas->SetComposition("Ne", 0.0, "CH4", 0.0, "Xe", 90.0, "CF4", 0.0, "TMA", 10.0);
+  else if (argc > 9 && string(argv[9])=="20TMA80Xe") gas->SetComposition("Ne", 0.0, "CH4", 0.0, "Xe", 80.0, "CF4", 0.0, "TMA", 20.0);
+  else if (argc > 9 && string(argv[9])=="50TMA50Xe") gas->SetComposition("Ne", 0.0, "CH4", 0.0, "Xe", 50.0, "CF4", 0.0, "TMA", 50.0);
   else if (argc > 9 && string(argv[9])=="4CH496Xe") gas->SetComposition("Ne", 0.0, "CH4", 4.0, "Xe", 96.0, "CF4", 0.0, "TMA", 0.0);
+  else if (argc > 9 && string(argv[9])=="4CH496Ar") gas->SetComposition("Ne", 0.0, "CH4", 4.0, "Ar", 96.0, "CF4", 0.0, "TMA", 0.0);
+  else if (argc > 9 && string(argv[9])=="2TMA98Ar") gas->SetComposition("Ne", 0.0, "CH4", 0.0, "Ar", 98.0, "CF4", 0.0, "TMA", 2.0);
+  else if (argc > 9 && string(argv[9])=="10TMA90Ar") gas->SetComposition("Ne", 0.0, "CH4", 0.0, "Ar", 90.0, "CF4", 0.0, "TMA", 10.0);
+  else if (argc > 9 && string(argv[9])=="20TMA80Ar") gas->SetComposition("Ne", 0.0, "CH4", 0.0, "Ar", 80.0, "CF4", 0.0, "TMA", 20.0);
+  else if (argc > 9 && string(argv[9])=="50TMA50Ar") gas->SetComposition("Ne", 0.0, "CH4", 0.0, "Ar", 50.0, "CF4", 0.0, "TMA", 50.0);
+  else if (argc > 9 && string(argv[9])=="Ar") gas->SetComposition("Ne", 0.0, "CH4", 0.0, "Ar", 100.0, "CF4", 0.0, "TMA", 0.0);
   else if (argc > 9 && string(argv[9])=="Xe") gas->SetComposition("Ne", 0.0, "CH4", 0.0, "Xe", 100.0, "CF4", 0.0, "TMA", 0.0);
   else gas->SetComposition("Ne", 0.0, "CH4", 0.0, "Xe", 100.0, "CF4", 0.0);
  				               //since the implemented decay model is only valid for pure noble gases,
@@ -360,6 +385,9 @@ for (int nef = 0; nef < 1; nef++) {           //control number of geometries to 
   comp->AddPlaneY(0.0, 0.0,"b");
   comp->AddPlaneY(yGap+0.2, v,"t");
   
+  comp->SetMagneticField(0.0,bfield,0.0);
+
+  
   // Make a sensor
   Sensor* sensor = new Sensor();
   sensor->AddComponent(comp);
@@ -373,8 +401,14 @@ for (int nef = 0; nef < 1; nef++) {           //control number of geometries to 
 
   // Make a microscopic tracking class for electron transport
   AvalancheMicroscopic* aval = new AvalancheMicroscopic();
+
+  // Enable B-filed simulation if magnetic field is set
+  if (bfield != 0){
+    aval->EnableMagneticField();
+  }
+
   aval->SetSensor(sensor);
- 
+
   //energy histogram:
   // TH1D *histen = new TH1D("hen","energy distribution",1000,0.0,100.0);
   // TH1D *histdiff = new TH1D("hdiff","transverse position distribution (cm)",100,0.0,1.0);
@@ -507,6 +541,7 @@ for (int nef = 0; nef < 1; nef++) {           //control number of geometries to 
 */
 
   }
+
 
   delete gas;
   delete geo;

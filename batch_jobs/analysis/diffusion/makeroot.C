@@ -19,6 +19,9 @@ void makeroot(TString input_filename, TString output_filename){
   Double_t z[ne_max];
   Double_t t[ne_max];
   Double_t kE[ne_max];
+  Double_t kx[ne_max];
+  Double_t ky[ne_max];
+  Double_t kz[ne_max];
   Double_t sigma_r;
   Double_t sigma_y;
   Double_t mean_y;
@@ -33,6 +36,9 @@ void makeroot(TString input_filename, TString output_filename){
   tr->Branch("z",z,"z[ne]/D");
   tr->Branch("t",t,"t[ne]/D");
   tr->Branch("kE",kE,"kE[ne]/D");
+  tr->Branch("kx",kx,"kx[ne]/D");
+  tr->Branch("ky",ky,"ky[ne]/D");
+  tr->Branch("kz",kz,"kz[ne]/D");
   tr->Branch("sigma_r",&sigma_r,"sigma_r/D");
   tr->Branch("sigma_y",&sigma_y,"sigma_y/D");
   tr->Branch("mean_y",&mean_y,"mean_y/D");
@@ -48,7 +54,7 @@ void makeroot(TString input_filename, TString output_filename){
   Int_t iframe;
   Double_t time;
   Int_t iele;
-  Double_t x_tmp, y_tmp, z_tmp, t_tmp, kE_tmp,potential,kx,ky,kz,minDistIon;
+  Double_t x_tmp, y_tmp, z_tmp, t_tmp, kE_tmp,potential,kx_tmp,ky_tmp,kz_tmp,minDistIon;
   TString dummy;
 
   Int_t cur_frame = 0;
@@ -73,7 +79,7 @@ void makeroot(TString input_filename, TString output_filename){
 
       getline(fin,line);
       istringstream lineStr2(line);
-      lineStr2 >> x_tmp >> y_tmp >> z_tmp >> t_tmp >> kE_tmp >> potential >> kx >> ky >> kz >> minDistIon;
+      lineStr2 >> x_tmp >> y_tmp >> z_tmp >> t_tmp >> kE_tmp >> potential >> kx_tmp >> ky_tmp >> kz_tmp >> minDistIon;
 
       x_tmp*= cm_to_um;
       y_tmp*= cm_to_um;
@@ -111,6 +117,9 @@ void makeroot(TString input_filename, TString output_filename){
       z[ne] = z_tmp;
       t[ne] = t_tmp;
       kE[ne] = kE_tmp;
+      kx[ne] = kx_tmp;
+      ky[ne] = ky_tmp;
+      kz[ne] = kz_tmp;
       ne++;
       
     }

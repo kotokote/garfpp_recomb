@@ -63,7 +63,8 @@
 // minDistIon, and frame 1 is equivalent to the 'final simultaneous' printout. also added statement to declare all initial conditions explicitly.
 // in version 21: added mdi0 and mdimax to struct electron; now available in final printout and in movie frame info. mdimax is also in recomb 
 // message.
-// in version 22: Added an option to apply magnetic field parallel to the electric field.
+// in version 22: Yasu: Added an option to apply magnetic field parallel to the electric field.
+// in version 23: Yasu: Added an option to change the temparature and also option to use Ar gas
 
 // ** changed nCollSkip to 1 instead of 100 midst v16
 
@@ -166,7 +167,7 @@ public:
 int main(int argc, char * argv[]) {
 
 // print version of the code for reference
-cout << endl << "example.C version 22" << endl << endl;
+cout << endl << "example.C version 23" << endl << endl;
 
 // make precision of cout 12
 cout.precision(12);
@@ -298,17 +299,26 @@ cout << "Movie frames being printed: " << numberofmovieframes << " frame(s)" << 
 double iondistmult = 1;
 if (argc > 12 && atof(argv[12]) > 0) iondistmult = atof(argv[12]);
 iondist = iondist*iondistmult;
-// print this sentence only if there's more than one electron-ion pair and if no input file is used
-if (elpercloud > 1 && (argc<=10 || !use_input_file))
-cout << "Ions will be placed " << iondist*1e7 << " nm apart in a line at " << eltheta*180/Pi << " degrees from +y, " << iondistmult 
-<< " x the default alpha particle density of " << 1e-5/atof(argv[6])*1e7 << " nm for this pressure." 
-<< " Total length of ion column is " << iondist*(elpercloud-1)*1e4 << " um." << endl;
 
 
 // 13th argument is the strength of magnetic field
 if (argc > 13 && atof(argv[13]) != 0) bfield = atof(argv[13]);
  cout << "Magnetic Field of " << bfield << " T\n";
 
+// 14th argument is the temparature
+ double temp=293.15;                           //temperature [K];
+ //double temp=0.1;                           //temperature [K];
+if (argc > 14 && atof(argv[14]) != 0) temp = atof(argv[14]);
+ cout << "Temperature of " << temp << " K\n";
+ iondist = iondist*temp/293.15; // correction based on temperature
+
+
+
+ // print this sentence only if there's more than one electron-ion pair and if no input file is used
+if (elpercloud > 1 && (argc<=10 || !use_input_file))
+cout << "Ions will be placed " << iondist*1e7 << " nm apart in a line at " << eltheta*180/Pi << " degrees from +y, " << iondistmult 
+<< " x the default alpha particle density of " << 1e-5/atof(argv[6])*1e7 << " nm for this pressure." 
+<< " Total length of ion column is " << iondist*(elpercloud-1)*1e4 << " um." << endl;
 
  
 // check arguments
@@ -335,8 +345,6 @@ for (int nef = 0; nef < 1; nef++) {           //control number of geometries to 
   //gas parameters
   //pressure now set above as command line arg, 7600 by default
   //double p=7600.;                                 //pressure [Torr] 10atm 
-  double temp=293.15;                           //temperature [K];
-  //double temp=0.1;                           //temperature [K];
 
   // Make a gas medium
   MediumMagboltz* gas = new MediumMagboltz();
@@ -347,7 +355,15 @@ for (int nef = 0; nef < 1; nef++) {           //control number of geometries to 
   // 9th command line argument: default 100% Xe if 'Xe' or unrecognizable - also 4CH496Xe and 2TMA98Xe
   if (argc > 9 && string(argv[9])=="2TMA98Xe") gas->SetComposition("Ne", 0.0, "CH4", 0.0, "Xe", 98.0, "CF4", 0.0, "TMA", 2.0);
   else if (argc > 9 && string(argv[9])=="10TMA90Xe") gas->SetComposition("Ne", 0.0, "CH4", 0.0, "Xe", 90.0, "CF4", 0.0, "TMA", 10.0);
+  else if (argc > 9 && string(argv[9])=="20TMA80Xe") gas->SetComposition("Ne", 0.0, "CH4", 0.0, "Xe", 80.0, "CF4", 0.0, "TMA", 20.0);
+  else if (argc > 9 && string(argv[9])=="50TMA50Xe") gas->SetComposition("Ne", 0.0, "CH4", 0.0, "Xe", 50.0, "CF4", 0.0, "TMA", 50.0);
   else if (argc > 9 && string(argv[9])=="4CH496Xe") gas->SetComposition("Ne", 0.0, "CH4", 4.0, "Xe", 96.0, "CF4", 0.0, "TMA", 0.0);
+  else if (argc > 9 && string(argv[9])=="4CH496Ar") gas->SetComposition("Ne", 0.0, "CH4", 4.0, "Ar", 96.0, "CF4", 0.0, "TMA", 0.0);
+  else if (argc > 9 && string(argv[9])=="2TMA98Ar") gas->SetComposition("Ne", 0.0, "CH4", 0.0, "Ar", 98.0, "CF4", 0.0, "TMA", 2.0);
+  else if (argc > 9 && string(argv[9])=="10TMA90Ar") gas->SetComposition("Ne", 0.0, "CH4", 0.0, "Ar", 90.0, "CF4", 0.0, "TMA", 10.0);
+  else if (argc > 9 && string(argv[9])=="20TMA80Ar") gas->SetComposition("Ne", 0.0, "CH4", 0.0, "Ar", 80.0, "CF4", 0.0, "TMA", 20.0);
+  else if (argc > 9 && string(argv[9])=="50TMA50Ar") gas->SetComposition("Ne", 0.0, "CH4", 0.0, "Ar", 50.0, "CF4", 0.0, "TMA", 50.0);
+  else if (argc > 9 && string(argv[9])=="Ar") gas->SetComposition("Ne", 0.0, "CH4", 0.0, "Ar", 100.0, "CF4", 0.0, "TMA", 0.0);
   else if (argc > 9 && string(argv[9])=="Xe") gas->SetComposition("Ne", 0.0, "CH4", 0.0, "Xe", 100.0, "CF4", 0.0, "TMA", 0.0);
   else gas->SetComposition("Ne", 0.0, "CH4", 0.0, "Xe", 100.0, "CF4", 0.0);
  				               //since the implemented decay model is only valid for pure noble gases,
